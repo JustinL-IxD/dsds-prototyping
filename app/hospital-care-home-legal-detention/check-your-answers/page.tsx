@@ -2,8 +2,9 @@ import type { Metadata } from 'next';
 
 import PageHeader from '@/components/PageHeader';
 import Wrapper from '@/components/Wrapper';
-import Button from '@/components/Button';
+import SummaryList from '@/components/SummaryList';
 import ButtonGroup from '@/components/ButtonGroup';
+import Button from '@/components/Button';
 
 export const metadata:Metadata = {
     title: 'Check your answers',
@@ -14,23 +15,57 @@ export const metadata:Metadata = {
  *
  * @returns {JSX.Element} - The page
  */
-const HospitalCareHomeLegalDetention:React.FC = function HospitalCareHomeLegalDetention() {
+const Page:React.FC = function Page() {
     const pageTitle:string = (
         typeof metadata.title === 'string'
             ? metadata.title
             : 'Social Security Scotland'
     );
 
+    const listItems = [
+        {
+            label: 'At the moment, are you staying in any of the following:',
+            answer: 'care home',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'How your stay in a hospital or care home is paid for',
+            answer: 'My own money or savings',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+    ];
+
     return (
         <>
             <Wrapper>
-                <PageHeader title={pageTitle} />
+                <PageHeader
+                    title={pageTitle}
+                />
+            </Wrapper>
+            <Wrapper>
+                <SummaryList
+                    items={listItems}
+                />
             </Wrapper>
             <Wrapper>
                 <ButtonGroup>
                     <Button
+                        variants="secondary"
+                        icon="chevron_left"
+                        iconSide="left"
+                        href="/hospital-care-home-legal-detention/stay-hospital-care-home-legal-detention"
+                    >
+                        Back
+                    </Button>
+                    <Button
                         icon="chevron_right"
-                        href="hospital-care-home-legal-detention/stay-hospital-care-home-legal-detention"
+                        href="/"
                     >
                         Continue
                     </Button>
@@ -40,4 +75,4 @@ const HospitalCareHomeLegalDetention:React.FC = function HospitalCareHomeLegalDe
     );
 };
 
-export default HospitalCareHomeLegalDetention;
+export default Page;

@@ -102,7 +102,7 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
                     </Button>
                     <Button
                         icon="chevron_right"
-                        href={open ? '/hospital-care-home-legal-detention/how-care-is-paid-for' : '/hospital-care-home-legal-detention/review-answers'}
+                        href={open ? '/hospital-care-home-legal-detention/how-care-is-paid-for' : '/hospital-care-home-legal-detention/check-your-answers'}
                     >
                         Save and continue
                     </Button>

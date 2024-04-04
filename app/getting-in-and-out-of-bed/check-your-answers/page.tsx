@@ -3,6 +3,8 @@ import type { Metadata } from 'next';
 import PageHeader from '@/components/PageHeader';
 import Wrapper from '@/components/Wrapper';
 import SummaryList from '@/components/SummaryList';
+import ButtonGroup from '@/components/ButtonGroup';
+import Button from '@/components/Button';
 
 export const metadata:Metadata = {
     title: 'Check your answers',
@@ -58,6 +60,24 @@ const Page:React.FC = function Page() {
                 <SummaryList
                     items={listItems}
                 />
+            </Wrapper>
+            <Wrapper>
+                <ButtonGroup>
+                    <Button
+                        variants="secondary"
+                        icon="chevron_left"
+                        iconSide="left"
+                        href="/getting-in-and-out-of-bed/help-you-need-getting-in-and-out-of-bed"
+                    >
+                        Back
+                    </Button>
+                    <Button
+                        icon="chevron_right"
+                        href="/"
+                    >
+                        Continue
+                    </Button>
+                </ButtonGroup>
             </Wrapper>
         </>
     );
