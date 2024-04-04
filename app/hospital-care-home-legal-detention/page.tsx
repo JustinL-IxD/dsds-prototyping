@@ -35,12 +35,12 @@ const HospitalCareHomeLegalDetention:React.FC = function HospitalCareHomeLegalDe
                 <Image
                     src={hospitalPic1}
                     alt="A hospital"
-                    width={500}
+                    height={300}
                 />
                 <Image
                     src={hospitalPic2}
                     alt="A hospital"
-                    width={500}
+                    height={300}
                 />
             </Wrapper>
             <Wrapper>
