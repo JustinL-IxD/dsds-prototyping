@@ -19,7 +19,7 @@ export const metadata:Metadata = {
  *
  * @returns {JSX.Element} - The page
  */
-const HospitalCareHomeLegalDetention:React.FC = function HospitalCareHomeLegalDetention() {
+const GettingInAndOutOfBed:React.FC = function GettingInAndOutOfBed() {
     const pageTitle:string = (
         typeof metadata.title === 'string'
             ? metadata.title
@@ -78,4 +78,4 @@ const HospitalCareHomeLegalDetention:React.FC = function HospitalCareHomeLegalDe
     );
 };
 
-export default HospitalCareHomeLegalDetention;
+export default GettingInAndOutOfBed;

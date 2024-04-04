@@ -9,6 +9,8 @@ import Wrapper from '@/components/Wrapper';
 import Button from '@/components/Button';
 import ButtonGroup from '@/components/ButtonGroup';
 import Radios from '@/components/Radio';
+import Question from '@/components/Question';
+import Input from '@/components/Input';
 
 /**
  * The document structure
@@ -76,13 +78,16 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
             </Wrapper>
             {open && (
                 <Wrapper>
-                    <p>Tell us about your stay. You should include:</p>
-                    <ul>
-                        <li>when your stay started</li>
-                        <li>how long you&apos;ll be there, if you know</li>
-                        <li>if you&apos;ve moved during your stay, for example from a care home to a hospital</li>
-                    </ul>
-                    <h2>Need to add text area</h2>
+                    <Question id="field-fixed-20" label="Tell us about your stay.">
+                        <p>You should include:</p>
+                        <ul>
+                            <li>when your stay started</li>
+                            <li>how long you&apos;ll be there, if you know</li>
+                            <li>if you&apos;ve moved during your stay, for example from a care home to a hospital</li>
+                        </ul>
+                        <p>This needs to be a text area component</p>
+                        <Input name="field-fixed-20" id="field-fixed-20" width="fluid-three-quarters" />
+                    </Question>
                 </Wrapper>
             )}
             <Wrapper>
