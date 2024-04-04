@@ -46,7 +46,7 @@ const Page:React.FC = function Page() {
                     label: 'Getting in and out of bed',
                     summary: 'Questions about your ability to get in or out of bed and help you need to do this',
                     status: 'not-started',
-                    link: '#',
+                    link: 'getting-in-and-out-of-bed',
                 },
             ],
             ordered: true,
