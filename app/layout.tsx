@@ -72,9 +72,9 @@ const Layout:React.FC<PropsWithChildren> = function Layout({
                         <SiteHeader
                             menuItems={[
                                 {
-                                    text: 'Digital Scotland Design System',
+                                    text: 'Sign out',
                                     href: 'https://designsystem.gov.scot',
-                                    target: '_blank',
+                                    target: '_self',
                                 },
                             ]}
                         />
