@@ -68,7 +68,7 @@ const HospitalCareHomeLegalDetention:React.FC = function HospitalCareHomeLegalDe
                     </Button>
                     <Button
                         icon="chevron_right"
-                        href="hospital-care-home-legal-detention/stay-hospital-care-home-legal-detention"
+                        href="getting-in-and-out-of-bed/help-you-need-getting-in-and-out-of-bed"
                     >
                         Continue
                     </Button>

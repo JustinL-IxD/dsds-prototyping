@@ -15,24 +15,34 @@ import Radios from '@/components/Radio';
  *
  * @returns {JSX.Element} - The page
  */
-const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHomeLegalDetention() {
+const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAndOutOfBed() {
     const [open, setOpen] = useState<boolean>(false);
 
     return (
         <>
             <Wrapper>
-                <PageHeader title="Stays in a hospital, care home or legal detention" />
+                <PageHeader title="Help you need getting in and out of bed" />
+            </Wrapper>
+            <Wrapper>
+                <p>You should think about:</p>
+                <ul>
+                    <li>help you might need but do not already have</li>
+                    <li>help you only need sometimes</li>
+                    <li>help from a person, or using an aid, tool or adaptation</li>
+                </ul>
             </Wrapper>
             <Wrapper>
                 <form>
                     <Radios
                         name="go-next"
                         id="go-next"
-                        label="At the moment, are you staying in any of the following:"
+                        label="Do you have difficulty getting in and out of bed?"
+                        hintText="Ask lewis about this section for complex hint text"
                         items={[
                             {
-                                label: 'hospital or hospice',
-                                value: 'hospital or hospice',
+                                label: 'Yes',
+                                value: 'yes',
+                                hintText: 'I sometimes or always have difficulty getting in and out of bed',
                                 /**
                                     * @param {Event} event - The event object
                                  */
@@ -41,50 +51,63 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
                                 },
                             },
                             {
-                                label: 'care home',
-                                value: 'care home',
+                                label: 'No',
+                                value: 'no',
+                                hintText: 'I never have difficulty getting in and out of bed',
                                 /**
                                     * @param {Event} event - The event object
                                  */
                                 onChange() {
                                     setOpen(true);
-                                },
-                            },
-                            {
-                                label: 'legal detention',
-                                value: 'legal detention',
-                                /**
-                                    * @param {Event} event - The event object
-                                 */
-                                onChange() {
-                                    setOpen(true);
-                                },
-                            },
-                            {
-                                label: 'none of the above',
-                                value: 'none of the above',
-                                /**
-                                    * @param {Event} event - The event object
-                                 */
-                                onChange() {
-                                    setOpen(false);
                                 },
                             },
                         ]}
                     />
                 </form>
             </Wrapper>
-            {open && (
-                <Wrapper>
-                    <p>Tell us about your stay. You should include:</p>
-                    <ul>
-                        <li>when your stay started</li>
-                        <li>how long you&apos;ll be there, if you know</li>
-                        <li>if you&apos;ve moved during your stay, for example from a care home to a hospital</li>
-                    </ul>
-                    <h2>Need to add text area</h2>
-                </Wrapper>
-            )}
+            <Wrapper>
+                <form>
+                    <Radios
+                        name="go-next"
+                        id="go-next"
+                        label="Do you ever use any aids, tools or adaptations to get in or out of bed?"
+                        hintText="Ask lewis about this section for complex hint text"
+                        items={[
+                            {
+                                label: 'Yes',
+                                value: 'yes',
+                                hintText: 'I sometimes or always use an aid, tool or adaptation to get in and out of bed',
+                                /**
+                                    * @param {Event} event - The event object
+                                 */
+                                onChange() {
+                                    setOpen(true);
+                                },
+                            },
+                            {
+                                label: 'No',
+                                value: 'no',
+                                hintText: 'I never use an aid, tool or adatation to get in and out of bed',
+                                /**
+                                    * @param {Event} event - The event object
+                                 */
+                                onChange() {
+                                    setOpen(true);
+                                },
+                            },
+                        ]}
+                    />
+                </form>
+            </Wrapper>
+            <Wrapper>
+                <p>Tell us about your stay. You should include:</p>
+                <ul>
+                    <li>when your stay started</li>
+                    <li>how long you&apos;ll be there, if you know</li>
+                    <li>if you&apos;ve moved during your stay, for example from a care home to a hospital</li>
+                </ul>
+                <h2>Need to add text area</h2>
+            </Wrapper>
             <Wrapper>
                 <ButtonGroup>
                     <Button
@@ -107,4 +130,4 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
     );
 };
 
-export default StayHospitalCareHomeLegalDetention;
+export default HelpYouNeedGettingInAndOutOfBed;
