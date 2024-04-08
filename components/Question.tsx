@@ -24,7 +24,7 @@ const Question:React.FC<ScotGov.Component.Field.Question> = function Question({
     hintText,
     text,
     error,
-    additional,
+    maxLength,
 }) {
     const ref = useRef<HTMLDivElement>(null);
     const errorText = typeof error === 'string' ? error : 'An error occurred.';
@@ -32,11 +32,11 @@ const Question:React.FC<ScotGov.Component.Field.Question> = function Question({
     useEffect(() => {
         if (typeof window === 'undefined') { return; }
 
-        if (additional?.maxLength) {
+        if (maxLength) {
             const characterCount = new CharacterCount(ref.current);
             characterCount.init();
         }
-    }, [ref, additional?.maxLength]);
+    }, [ref, maxLength]);
 
     return (
         <WrapperTag
@@ -48,7 +48,7 @@ const Question:React.FC<ScotGov.Component.Field.Question> = function Question({
                 className,
             )}
             data-module={classNames(
-                additional?.maxLength ? 'ds-character-count' : '',
+                maxLength ? 'ds-character-count' : '',
             )}
             ref={ref}
         >
@@ -57,17 +57,7 @@ const Question:React.FC<ScotGov.Component.Field.Question> = function Question({
                     ? <legend className="ds_label">{ label }</legend>
                     : <Label htmlFor={id}>{ label }</Label>
             }
-            { text && (
-                <div
-                    dangerouslySetInnerHTML={(
-                        typeof text === 'string'
-                            ? { __html: autop(text) }
-                            : undefined
-                    )}
-                >
-                    { typeof text !== 'string' ? text : null }
-                </div>
-            )}
+            { text && autop(text)}
             { hintText && <HintText text={hintText} /> }
             { error && <ErrorMessage text={errorText} /> }
             { children }

@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Image from 'next/image';
 import Metadata from './Metadata';
 
 import classNames from '../lib/classNames';
@@ -39,10 +40,12 @@ const FileDownload:React.FC<ScotGov.Component.FileDownload> = function FileDownl
                     tabIndex={-1}
                     href={link}
                 >
-                    <img
+                    <Image
                         className="ds_file-download__thumbnail-image"
                         src={image}
                         alt="Document cover"
+                        width={100}
+                        height={100}
                     />
                 </a>
             </div>

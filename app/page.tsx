@@ -5,6 +5,7 @@ import type { Metadata } from 'next';
 import PageHeader from '@/components/PageHeader';
 import Wrapper from '@/components/Wrapper';
 import { TaskListGroup } from '@/components/TaskList';
+import SectionHeader from '@/components/SectionHeader';
 
 export const metadata:Metadata = {
     title: 'Apply for Pension Age Disability Payment',
@@ -58,12 +59,34 @@ const Page:React.FC = function Page() {
             <Wrapper>
                 <PageHeader title={pageTitle} />
             </Wrapper>
+
+            <Wrapper hasBackground="darkblue">
+                <p>
+                    This is something that you’ll be able to use to build up pages using the
+                    {' '}
+                    <a href="https://designsystem.gov.scot" target="_blank" rel="noopener noreferrer">
+                        Digital Scotland Design System
+                    </a>
+                    .
+                </p>
+            </Wrapper>
+
             <Wrapper>
                 <TaskListGroup
                     heading=""
                     summary="You need to complete and review each section below before submitting your application."
                     ordered
                     groups={groups}
+                />
+                <hr />
+                <h2>Section header</h2>
+                <SectionHeader
+                    link="/"
+                    title="Adult disability payment"
+                />
+                <h3>Without link</h3>
+                <SectionHeader
+                    title="Adult disability payment"
                 />
             </Wrapper>
         </>

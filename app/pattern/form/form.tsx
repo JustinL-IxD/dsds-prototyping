@@ -24,6 +24,9 @@ const Fields:React.FC = function Fields() {
                         label: 'Google',
                         value: 'google',
                         defaultChecked: true,
+                        /**
+                            * Handles the change event for the 'Google' radio button.
+                        */
                         onChange() {
                             setAction('https://google.com/');
                         },
@@ -31,6 +34,9 @@ const Fields:React.FC = function Fields() {
                     {
                         label: 'DuckDuckGo',
                         value: 'ddg',
+                        /**
+                            * Handles the change event for the 'Google' radio button.
+                        */
                         onChange() {
                             setAction('https://duckduckgo.com/');
                         },
@@ -38,6 +44,9 @@ const Fields:React.FC = function Fields() {
                     {
                         label: 'Social Security Scotland',
                         value: 'sosec',
+                        /**
+                            * Handles the change event for the 'Google' radio button.
+                        */
                         onChange() {
                             setAction('https://socialsecurity.gov.scot/');
                         },

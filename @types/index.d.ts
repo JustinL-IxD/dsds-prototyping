@@ -50,4 +50,21 @@ declare namespace ScotGov {
         },
         error?: string | boolean,
     }
+
+    namespace Form {
+        interface Error {
+            field: string,
+            href?: string,
+            message: string,
+            fieldMessage?: string,
+        }
+
+        type Value = string | string[];
+
+        interface State {
+            message: string,
+            errors?: Error[],
+            values?: { [key:string]: Value },
+        }
+    }
 }

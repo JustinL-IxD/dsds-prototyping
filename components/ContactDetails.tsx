@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import Heading from './WrapperTag';
 
@@ -9,7 +10,9 @@ import classNames from '../lib/classNames';
  * @param {ScotGov.Component.Column} props - Properties for the element
  * @returns {JSX.Element} - The element
  */
-const ContactDetailsColumn: React.FC<ScotGov.Component.ContactDetails.Column> = function ContactDetailsColumn({
+const ContactDetailsColumn:React.FC<
+    ScotGov.Component.ContactDetails.Column
+> = function ContactDetailsColumn({
     items,
 }) {
     return (
@@ -36,11 +39,13 @@ const ContactDetailsColumn: React.FC<ScotGov.Component.ContactDetails.Column> = 
                                         className="ds_contact-details__social-item"
                                         key={networkKey}
                                     >
-                                        <img
+                                        <Image
                                             className="ds_contact-details__social-icon"
                                             src={`/images/social-icons/${network}.svg`}
                                             alt=""
                                             aria-hidden="true"
+                                            width={24}
+                                            height={24}
                                         />
                                         <Link
                                             className="ds_contact-details__social-link"
@@ -71,7 +76,7 @@ const ContactDetailsColumn: React.FC<ScotGov.Component.ContactDetails.Column> = 
  * @param {ScotGov.Component.ContactDetails} props - Properties for the element
  * @returns {JSX.Element} - The element
  */
-const ContactDetails: React.FC<ScotGov.Component.ContactDetails> = function Contact({
+const ContactDetails:React.FC<ScotGov.Component.ContactDetails> = function Contact({
     headingLevel: tag = 'h2',
     title = 'Contact',
     className,
