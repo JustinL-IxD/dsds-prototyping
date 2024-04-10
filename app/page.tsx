@@ -5,7 +5,6 @@ import type { Metadata } from 'next';
 import PageHeader from '@/components/PageHeader';
 import Wrapper from '@/components/Wrapper';
 import { TaskListGroup } from '@/components/TaskList';
-import SectionHeader from '@/components/SectionHeader';
 
 export const metadata:Metadata = {
     title: 'Apply for Pension Age Disability Payment',
@@ -66,16 +65,6 @@ const Page:React.FC = function Page() {
                     summary="You need to complete and review each section below before submitting your application."
                     ordered
                     groups={groups}
-                />
-                <hr />
-                <h2>Section header</h2>
-                <SectionHeader
-                    link="/"
-                    title="Adult disability payment"
-                />
-                <h3>Without link</h3>
-                <SectionHeader
-                    title="Adult disability payment"
                 />
             </Wrapper>
         </>

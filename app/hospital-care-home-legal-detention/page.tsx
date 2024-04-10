@@ -9,6 +9,7 @@ import PageHeader from '@/components/PageHeader';
 import Wrapper from '@/components/Wrapper';
 import Button from '@/components/Button';
 import ButtonGroup from '@/components/ButtonGroup';
+import SectionHeader from '@/components/SectionHeader';
 
 export const metadata:Metadata = {
     title: 'About any current stay in a hospital, care home or legal detention',
@@ -29,9 +30,15 @@ const HospitalCareHomeLegalDetention:React.FC = function HospitalCareHomeLegalDe
     return (
         <>
             <Wrapper>
-                <PageHeader title={pageTitle} />
+                <SectionHeader
+                    link="/"
+                    title="Adult disability payment"
+                />
             </Wrapper>
             <Wrapper>
+                <PageHeader title={pageTitle} />
+            </Wrapper>
+            <Wrapper style={{ marginBottom: '20px' }}>
                 <Image
                     src={hospitalPic1}
                     alt="A hospital"

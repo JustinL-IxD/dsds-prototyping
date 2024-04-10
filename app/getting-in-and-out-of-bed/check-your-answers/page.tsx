@@ -5,6 +5,7 @@ import Wrapper from '@/components/Wrapper';
 import SummaryList from '@/components/SummaryList';
 import ButtonGroup from '@/components/ButtonGroup';
 import Button from '@/components/Button';
+import SectionHeader from '@/components/SectionHeader';
 
 export const metadata:Metadata = {
     title: 'Check your answers',
@@ -51,6 +52,12 @@ const Page:React.FC = function Page() {
 
     return (
         <>
+            <Wrapper>
+                <SectionHeader
+                    link="/"
+                    title="Adult disability payment"
+                />
+            </Wrapper>
             <Wrapper>
                 <PageHeader
                     title={pageTitle}

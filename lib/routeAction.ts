@@ -46,18 +46,11 @@ export async function getAllRoutes():Promise<string[]> {
     ));
 }
 
-/**
- * Delays the execution of a function by a specified time.
- *
- * @ param {number} ms - The time to delay in milliseconds.
- * @ returns {Promise<void>} - A promise that resolves after the delay.
-
-const delay = function delay(ms:number):Promise<void> {
-    return new Promise((resolve) => {
-        setTimeout(resolve, ms);
-    });
-};
-*/
+// const delay = function delay(ms:number) {
+//     return new Promise((resolve) => {
+//         setTimeout(resolve, ms);
+//     });
+// };
 
 /**
  * Parses form submissions and validation.
@@ -189,7 +182,7 @@ const handleSubmit = async function handleSubmit(
             }
 
             if (method && method(formData)) {
-                return true;
+                return false;
             }
 
             if (rawFormData[field] === value) {

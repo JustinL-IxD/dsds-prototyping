@@ -10,7 +10,8 @@ import Button from '@/components/Button';
 import ButtonGroup from '@/components/ButtonGroup';
 import Radios from '@/components/Radio';
 import Question from '@/components/Question';
-import Input from '@/components/Input';
+import TextArea from '@/components/TextArea';
+import SectionHeader from '@/components/SectionHeader';
 
 /**
  * The document structure
@@ -21,9 +22,15 @@ const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAn
     return (
         <>
             <Wrapper>
-                <PageHeader title="Help you need getting in and out of bed" />
+                <SectionHeader
+                    link="/"
+                    title="Adult disability payment"
+                />
             </Wrapper>
             <Wrapper>
+                <PageHeader title="Help you need getting in and out of bed" />
+            </Wrapper>
+            <Wrapper style={{ marginBottom: '40px' }}>
                 <p>You should think about:</p>
                 <ul>
                     <li>help you might need but do not already have</li>
@@ -84,8 +91,7 @@ const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAn
                         <li>help from a person, or using an aid, tool or adaptation</li>
                     </ul>
                     <p>We know this might vary, so let us know if this can change. For example, if your condition flares up every few weeks, or if you sometimes stay in bed all day.</p>
-                    <p>This needs to be a text area component</p>
-                    <Input name="field-fixed-20" id="field-fixed-20" width="fluid-three-quarters" />
+                    <TextArea name="field-fixed-20" id="field-fixed-20" width="fixed-20" />
                 </Question>
             </Wrapper>
             <Wrapper>

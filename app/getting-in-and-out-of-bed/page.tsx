@@ -9,6 +9,7 @@ import PageHeader from '@/components/PageHeader';
 import Wrapper from '@/components/Wrapper';
 import Button from '@/components/Button';
 import ButtonGroup from '@/components/ButtonGroup';
+import SectionHeader from '@/components/SectionHeader';
 
 export const metadata:Metadata = {
     title: 'About getting in and out of bed',
@@ -29,9 +30,15 @@ const GettingInAndOutOfBed:React.FC = function GettingInAndOutOfBed() {
     return (
         <>
             <Wrapper>
-                <PageHeader title={pageTitle} />
+                <SectionHeader
+                    link="/"
+                    title="Adult disability payment"
+                />
             </Wrapper>
             <Wrapper>
+                <PageHeader title={pageTitle} />
+            </Wrapper>
+            <Wrapper style={{ marginBottom: '20px' }}>
                 <Image
                     src={bedPic1}
                     alt="A hospital"

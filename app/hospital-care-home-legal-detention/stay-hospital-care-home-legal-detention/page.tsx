@@ -10,7 +10,8 @@ import Button from '@/components/Button';
 import ButtonGroup from '@/components/ButtonGroup';
 import Radios from '@/components/Radio';
 import Question from '@/components/Question';
-import Input from '@/components/Input';
+import TextArea from '@/components/TextArea';
+import SectionHeader from '@/components/SectionHeader';
 
 /**
  * The document structure
@@ -22,6 +23,12 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
 
     return (
         <>
+            <Wrapper>
+                <SectionHeader
+                    link="/"
+                    title="Adult disability payment"
+                />
+            </Wrapper>
             <Wrapper>
                 <PageHeader title="Stays in a hospital, care home or legal detention" />
             </Wrapper>
@@ -85,8 +92,7 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
                             <li>how long you&apos;ll be there, if you know</li>
                             <li>if you&apos;ve moved during your stay, for example from a care home to a hospital</li>
                         </ul>
-                        <p>This needs to be a text area component</p>
-                        <Input name="field-fixed-20" id="field-fixed-20" width="fluid-three-quarters" />
+                        <TextArea name="field-fixed-20" id="field-fixed-20" width="fixed-20" />
                     </Question>
                 </Wrapper>
             )}

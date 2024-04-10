@@ -5,6 +5,7 @@ import Wrapper from '@/components/Wrapper';
 import Button from '@/components/Button';
 import ButtonGroup from '@/components/ButtonGroup';
 import Checkboxes from '@/components/Checkbox';
+import SectionHeader from '@/components/SectionHeader';
 
 /**
  * The document structure
@@ -14,6 +15,12 @@ import Checkboxes from '@/components/Checkbox';
 const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHomeLegalDetention() {
     return (
         <>
+            <Wrapper>
+                <SectionHeader
+                    link="/"
+                    title="Adult disability payment"
+                />
+            </Wrapper>
             <Wrapper>
                 <PageHeader title="How your stay in a hospital or care home is paid for" />
             </Wrapper>
