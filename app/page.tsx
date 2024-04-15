@@ -32,7 +32,7 @@ const Page:React.FC = function Page() {
                     label: 'When your care needs started',
                     summary: 'Tell us about when your care needs started',
                     status: 'not-started',
-                    link: '/hospital-care-home-legal-detention',
+                    link: '/care-needs',
                 },
                 {
                     id: 'planned-treatment',
