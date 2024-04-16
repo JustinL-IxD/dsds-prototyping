@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import Heading from './WrapperTag';
 
@@ -38,11 +39,13 @@ const ContactDetailsColumn:React.FC<
                                         className="ds_contact-details__social-item"
                                         key={networkKey}
                                     >
-                                        <img
+                                        <Image
                                             className="ds_contact-details__social-icon"
                                             src={`/images/social-icons/${network}.svg`}
                                             alt=""
                                             aria-hidden="true"
+                                            width={24}
+                                            height={24}
                                         />
                                         <Link
                                             className="ds_contact-details__social-link"

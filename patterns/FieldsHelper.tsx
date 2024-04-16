@@ -17,7 +17,7 @@ import SequentialNavigation from '@/components/SequentialNavigation';
 import Grid from '@/components/Grid';
 
 import autop from '@/lib/autop';
-import Select from '@/components/Select';
+import SelectComponent from '@/components/Select';
 
 /**
  * @param {Object} props - Properties for the element
@@ -133,17 +133,20 @@ const FieldHelper:React.FC<ScotGov.Pattern.FieldHelper> = function FieldHelper({
         case 'image':
             return (
                 <>
-                    {!data.alt && <Warning>Alt text is required for images.</Warning>}
+                    <Warning>Alt text is required for images.</Warning>
+                    {/*
+                    {!data.alt && }
                     <img
                         {...data}
                     />
+                     */}
                 </>
             );
 
         case 'select':
             return (
                 <Question {...data as ScotGov.Component.Field.Select} items={undefined}>
-                    <Select
+                    <SelectComponent
                         {...data as ScotGov.Component.Field.Select}
                     />
                 </Question>

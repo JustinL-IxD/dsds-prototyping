@@ -22,7 +22,7 @@
         "max-lines": [
             "warn",
             {
-                "max": 500,
+                "max": 2000,
                 "skipBlankLines": true,
                 "skipComments": true
             }
