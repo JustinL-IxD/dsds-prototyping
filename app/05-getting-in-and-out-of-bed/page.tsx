@@ -2,8 +2,8 @@
 
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import hospitalPic1 from '@/public/images/hospital-care-01.jpg';
-import hospitalPic2 from '@/public/images/hospital-care-02.jpg';
+import bedPic1 from '@/public/images/bed-01.png';
+import bedPic2 from '@/public/images/bed-02.png';
 
 import PageHeader from '@/components/PageHeader';
 import Wrapper from '@/components/Wrapper';
@@ -12,7 +12,7 @@ import ButtonGroup from '@/components/ButtonGroup';
 import SectionHeader from '@/components/SectionHeader';
 
 export const metadata:Metadata = {
-    title: 'About any current stay in a hospital, care home or legal detention',
+    title: 'About getting in and out of bed',
 };
 
 /**
@@ -20,7 +20,7 @@ export const metadata:Metadata = {
  *
  * @returns {JSX.Element} - The page
  */
-const HospitalCareHomeLegalDetention:React.FC = function HospitalCareHomeLegalDetention() {
+const GettingInAndOutOfBed:React.FC = function GettingInAndOutOfBed() {
     const pageTitle:string = (
         typeof metadata.title === 'string'
             ? metadata.title
@@ -32,7 +32,7 @@ const HospitalCareHomeLegalDetention:React.FC = function HospitalCareHomeLegalDe
             <Wrapper>
                 <SectionHeader
                     link="/"
-                    title="Adult disability payment"
+                    title="Pension Age Disability Payment"
                 />
             </Wrapper>
             <Wrapper>
@@ -40,30 +40,28 @@ const HospitalCareHomeLegalDetention:React.FC = function HospitalCareHomeLegalDe
             </Wrapper>
             <Wrapper style={{ marginBottom: '20px' }}>
                 <Image
-                    src={hospitalPic1}
+                    src={bedPic1}
                     alt="A hospital"
                     height={300}
                 />
                 <Image
-                    src={hospitalPic2}
+                    src={bedPic2}
                     alt="A hospital"
                     height={300}
                 />
             </Wrapper>
             <Wrapper>
-                <p>In this section, we&apos;ll ask whether you&apos;re currently staying in:</p>
+                <p>In this section, we&apos;ll ask about whether you:</p>
                 <ul>
-                    <li>hospital</li>
-                    <li>care home</li>
-                    <li>legal detention</li>
+                    <li>have difficulty getting in and out of bed</li>
+                    <li>use aids, tools or adaptations to get in and out of bed</li>
                 </ul>
-                <p>We will also ask how this is paid for, if you&apos;re in a hospital or care home.</p>
-                <p>We ask about this because it can affect:</p>
+                <p>We will also ask about the help and support you need getting in or out of bed.</p>
+                <p>This includes:</p>
                 <ul>
-                    <li>how much Pension Age Disability Payment you&apos;re paid</li>
-                    <li>when your payments will start</li>
+                    <li>any aids, tools or adaptations you use</li>
+                    <li>help you need, even if you do not currently get it</li>
                 </ul>
-                <p>You can also tell us if you&apos;re not sure.</p>
             </Wrapper>
             <Wrapper>
                 <ButtonGroup>
@@ -77,7 +75,7 @@ const HospitalCareHomeLegalDetention:React.FC = function HospitalCareHomeLegalDe
                     </Button>
                     <Button
                         icon="chevron_right"
-                        href="hospital-care-home-legal-detention/stay-hospital-care-home-legal-detention"
+                        href="05-getting-in-and-out-of-bed/01-help-you-need-getting-in-and-out-of-bed"
                     >
                         Continue
                     </Button>
@@ -87,4 +85,4 @@ const HospitalCareHomeLegalDetention:React.FC = function HospitalCareHomeLegalDe
     );
 };
 
-export default HospitalCareHomeLegalDetention;
+export default GettingInAndOutOfBed;

@@ -53,7 +53,7 @@ const Page:React.FC = function Page() {
                     label: 'Current stays in a hospital, care home or legal detention',
                     summary: "Tell us whether you're currently in hospital, a care home or legal detention",
                     status: 'not-started',
-                    link: '/hospital-care-home-legal-detention',
+                    link: '/04-hospital-care-home-legal-detention',
                 },
             ],
             ordered: true,
@@ -67,7 +67,7 @@ const Page:React.FC = function Page() {
                     label: 'Getting in and out of bed',
                     summary: 'Questions about your ability to get in or out of bed and help you need to do this',
                     status: 'not-started',
-                    link: 'getting-in-and-out-of-bed',
+                    link: '/05-getting-in-and-out-of-bed',
                 },
                 {
                     id: 'washing-bathing',

@@ -24,7 +24,7 @@ const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAn
             <Wrapper>
                 <SectionHeader
                     link="/"
-                    title="Adult disability payment"
+                    title="Pension Age Disability Payment"
                 />
             </Wrapper>
             <Wrapper>
@@ -39,39 +39,51 @@ const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAn
                 </ul>
             </Wrapper>
             <Wrapper>
-                <form>
+                <Question id="field-fixed-20" label="Do you have difficulty getting in and out of bed?">
+                    <p>This could be:</p>
+                    <ul>
+                        <li>physical difficulty</li>
+                        <li>needing encouragement or motivation from someone else</li>
+                        <li>needing to use an aid, tool or adaptation</li>
+                        <li>taking a long time to get in or out of bed</li>
+                    </ul>
                     <Radios
-                        name="difficulty"
-                        id="difficulty"
-                        label="Do you have difficulty getting in and out of bed?"
-                        hintText="Ask lewis about this section for complex hint text"
+                        name="aids"
+                        id="aids"
                         items={[
                             {
                                 label: 'Yes',
                                 value: 'yes',
-                                hintText: 'I sometimes or always have difficulty getting in and out of bed',
+                                hintText: 'I sometimes or always have difficulty get in and out of bed',
                             },
                             {
                                 label: 'No',
                                 value: 'no',
-                                hintText: 'I never have difficulty getting in and out of bed',
+                                hintText: 'I never have difficulty get in and out of bed',
                             },
                         ]}
                     />
-                </form>
+                </Question>
             </Wrapper>
             <Wrapper>
-                <form>
+                <Question id="field-fixed-20" label="Do you ever use any aids, tools or adaptations to get in or out of bed?">
+                    <p>Examples of aids and adaptations:</p>
+                    <ul>
+                        <li>stick</li>
+                        <li>frame</li>
+                        <li>handrail</li>
+                        <li>hoist</li>
+                        <li>changes to your bedroom</li>
+                        <li>leaning on furniture</li>
+                    </ul>
                     <Radios
                         name="aids"
                         id="aids"
-                        label="Do you ever use any aids, tools or adaptations to get in or out of bed?"
-                        hintText="Ask lewis about this section for complex hint text"
                         items={[
                             {
                                 label: 'Yes',
                                 value: 'yes',
-                                hintText: 'I sometimes or always use an aid, tool or adaptation to get in and out of bed',
+                                hintText: 'I sometimes or always use an aid, tool or adatation to get in and out of bed',
                             },
                             {
                                 label: 'No',
@@ -80,7 +92,7 @@ const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAn
                             },
                         ]}
                     />
-                </form>
+                </Question>
             </Wrapper>
             <Wrapper>
                 <Question id="field-fixed-20" label="Tell us about help and support you need getting in or out of bed">
@@ -100,13 +112,13 @@ const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAn
                         variants="secondary"
                         icon="chevron_left"
                         iconSide="left"
-                        href="/getting-in-and-out-of-bed"
+                        href="/05-getting-in-and-out-of-bed"
                     >
                         Back
                     </Button>
                     <Button
                         icon="chevron_right"
-                        href="/getting-in-and-out-of-bed/check-your-answers"
+                        href="./02-check-your-answers"
                     >
                         Save and continue
                     </Button>

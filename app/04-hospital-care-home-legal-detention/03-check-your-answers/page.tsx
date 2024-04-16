@@ -47,7 +47,7 @@ const Page:React.FC = function Page() {
             <Wrapper>
                 <SectionHeader
                     link="/"
-                    title="Adult disability payment"
+                    title="Pension Age Disability Payment"
                 />
             </Wrapper>
             <Wrapper>
@@ -66,7 +66,7 @@ const Page:React.FC = function Page() {
                         variants="secondary"
                         icon="chevron_left"
                         iconSide="left"
-                        href="/hospital-care-home-legal-detention/stay-hospital-care-home-legal-detention"
+                        href="./02-how-care-is-paid-for"
                     >
                         Back
                     </Button>
