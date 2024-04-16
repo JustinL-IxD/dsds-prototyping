@@ -32,14 +32,14 @@ const Page:React.FC = function Page() {
                     label: 'When your care needs started',
                     summary: 'Tell us about when your care needs started',
                     status: 'not-started',
-                    link: '/care-needs',
+                    link: '/01-care-needs',
                 },
                 {
                     id: 'planned-treatment',
                     label: 'Planned medical treatment',
                     summary: 'Tell us about medical treatment or surgery you have planned, or that you\'re on the waiting list for',
                     status: 'not-started',
-                    link: '/hospital-care-home-legal-detention',
+                    link: '/02-planned-medical-treatment',
                 },
                 {
                     id: 'conditions-medications',
