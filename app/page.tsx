@@ -46,7 +46,7 @@ const Page:React.FC = function Page() {
                     label: 'Conditions, medications and treatments',
                     summary: 'Tell us about any conditions or symptoms you have, and any medications you take',
                     status: 'not-started',
-                    link: '/hospital-care-home-legal-detention',
+                    link: '/03-conditions-medications',
                 },
                 {
                     id: 'hospital',
