@@ -19,7 +19,7 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
             <Wrapper>
                 <SectionHeader
                     link="/"
-                    title="Adult disability payment"
+                    title="Pension Age Disability Payment"
                 />
             </Wrapper>
             <Wrapper>
@@ -50,13 +50,13 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
                         variants="secondary"
                         icon="chevron_left"
                         iconSide="left"
-                        href="/hospital-care-home-legal-detention/stay-hospital-care-home-legal-detention"
+                        href="/01-care-needs/care-needs-six-months"
                     >
                         Back
                     </Button>
                     <Button
                         icon="chevron_right"
-                        href="/hospital-care-home-legal-detention/check-your-answers"
+                        href="/01-care-needs/check-your-answers"
                     >
                         Save and continue
                     </Button>

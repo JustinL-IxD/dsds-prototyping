@@ -72,7 +72,7 @@ const HospitalCareHomeLegalDetention:React.FC = function HospitalCareHomeLegalDe
                     </Button>
                     <Button
                         icon="chevron_right"
-                        href="care-needs/care-needs-six-months"
+                        href="01-care-needs/care-needs-six-months"
                     >
                         Continue
                     </Button>
