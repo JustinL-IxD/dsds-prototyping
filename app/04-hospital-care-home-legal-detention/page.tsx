@@ -36,7 +36,7 @@ const HospitalCareHomeLegalDetention:React.FC = function HospitalCareHomeLegalDe
                 />
             </Wrapper>
             <Wrapper>
-                <PageHeader title={pageTitle} />
+                <PageHeader title={pageTitle} caption="Current stays in a hospital, care home or legal detention" />
             </Wrapper>
             <Wrapper style={{ marginBottom: '20px' }}>
                 <Image

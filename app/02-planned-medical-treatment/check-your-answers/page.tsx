@@ -53,6 +53,7 @@ const Page:React.FC = function Page() {
             <Wrapper>
                 <PageHeader
                     title={pageTitle}
+                    caption="Planned medical treatment"
                 />
             </Wrapper>
             <Wrapper>

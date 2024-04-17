@@ -28,7 +28,7 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
                 />
             </Wrapper>
             <Wrapper>
-                <PageHeader title="Tell us about your conditions and symptoms" />
+                <PageHeader title="Tell us about your conditions and symptoms" caption="Conditions, medications and treatments" />
             </Wrapper>
             <Wrapper>
                 <p>If you know the name of your condition or conditions you can enter them below.</p>

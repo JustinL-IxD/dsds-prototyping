@@ -28,7 +28,7 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
                 />
             </Wrapper>
             <Wrapper>
-                <PageHeader title="Planned medical treatment" />
+                <PageHeader title="Planned medical treatment" caption="Planned medical treatment" />
             </Wrapper>
             <Wrapper>
                 <p>It&apos;s helpful for us to know about medical treatment for any condition or disability that means you need help or support.</p>

@@ -24,7 +24,7 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
                 />
             </Wrapper>
             <Wrapper>
-                <PageHeader title="What treatments or therapies do you get?" />
+                <PageHeader title="What treatments or therapies do you get?" caption="Conditions, medications and treatments" />
             </Wrapper>
             <Wrapper>
                 <p>Tell us the name of each treatment how often it happens and how long it takes:</p>

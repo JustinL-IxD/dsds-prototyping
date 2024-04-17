@@ -30,7 +30,7 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
                 />
             </Wrapper>
             <Wrapper>
-                <PageHeader title="About your condition or symptoms" />
+                <PageHeader title="About your condition or symptoms" caption="Conditions, medications and treatments" />
             </Wrapper>
             <Wrapper>
                 <form>

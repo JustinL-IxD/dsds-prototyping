@@ -33,7 +33,7 @@ const HospitalCareHomeLegalDetention:React.FC = function HospitalCareHomeLegalDe
                 />
             </Wrapper>
             <Wrapper>
-                <PageHeader title={pageTitle} />
+                <PageHeader title={pageTitle} caption="Conditions, medications and treatments" />
             </Wrapper>
             <Wrapper>
                 <p>In this section, we&apos;ll ask about any:</p>

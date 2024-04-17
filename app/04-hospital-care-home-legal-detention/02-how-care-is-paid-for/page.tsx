@@ -22,7 +22,7 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
                 />
             </Wrapper>
             <Wrapper>
-                <PageHeader title="How your stay in a hospital or care home is paid for" />
+                <PageHeader title="How your stay in a hospital or care home is paid for" caption="Current stays in a hospital, care home or legal detention" />
             </Wrapper>
             <Wrapper>
                 <Checkboxes

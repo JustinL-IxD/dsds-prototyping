@@ -28,7 +28,7 @@ const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAn
                 />
             </Wrapper>
             <Wrapper>
-                <PageHeader title="Help you need getting in and out of bed" />
+                <PageHeader title="Help you need getting in and out of bed" caption="Getting in and out of bed" />
             </Wrapper>
             <Wrapper style={{ marginBottom: '40px' }}>
                 <p>You should think about:</p>

@@ -61,6 +61,7 @@ const Page:React.FC = function Page() {
             <Wrapper>
                 <PageHeader
                     title={pageTitle}
+                    caption="Getting in and out of bed"
                 />
             </Wrapper>
             <Wrapper>

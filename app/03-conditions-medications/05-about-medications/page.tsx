@@ -29,7 +29,7 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
                 />
             </Wrapper>
             <Wrapper>
-                <PageHeader title="About your medication" />
+                <PageHeader title="About your medication" caption="Conditions, medications and treatments" />
             </Wrapper>
             <Wrapper>
                 <p>If you have a recent prescription list showing your medication, you can either upload it online or post it to us.</p>

@@ -36,7 +36,7 @@ const GettingInAndOutOfBed:React.FC = function GettingInAndOutOfBed() {
                 />
             </Wrapper>
             <Wrapper>
-                <PageHeader title={pageTitle} />
+                <PageHeader title={pageTitle} caption="Getting in and out of bed" />
             </Wrapper>
             <Wrapper style={{ marginBottom: '20px' }}>
                 <Image

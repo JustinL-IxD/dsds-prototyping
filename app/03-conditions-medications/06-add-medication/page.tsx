@@ -24,7 +24,7 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
                 />
             </Wrapper>
             <Wrapper>
-                <PageHeader title="What medication do you need and how do you take it?" />
+                <PageHeader title="What medication do you need and how do you take it?" caption="Conditions, medications and treatments" />
             </Wrapper>
             <Wrapper>
                 <p>You should also include any medications that you do not take regularly or only in emergencies.</p>

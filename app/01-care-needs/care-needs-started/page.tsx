@@ -23,7 +23,7 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
                 />
             </Wrapper>
             <Wrapper>
-                <PageHeader title="We want to know when your care needs started" />
+                <PageHeader title="We want to know when your care needs started" caption="When your care needs started" />
             </Wrapper>
             <Wrapper>
                 <p>If your application is successful we&apos;ll use this to calculate when your payments will start</p>

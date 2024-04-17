@@ -53,6 +53,7 @@ const Page:React.FC = function Page() {
             <Wrapper>
                 <PageHeader
                     title={pageTitle}
+                    caption="Current stays in a hospital, care home or legal detention"
                 />
             </Wrapper>
             <Wrapper>

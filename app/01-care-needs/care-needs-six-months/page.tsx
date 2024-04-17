@@ -28,7 +28,7 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
                 />
             </Wrapper>
             <Wrapper>
-                <PageHeader title="We want to know if you have had care needs for 6 months or more" />
+                <PageHeader title="We want to know if you have had care needs for 6 months or more" caption="When your care needs started" />
             </Wrapper>
             <Wrapper>
                 <p>Care needs are help or support you need during the day or night. Your care needs could have started when you:</p>
