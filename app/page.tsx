@@ -130,7 +130,7 @@ const Page:React.FC = function Page() {
                     label: 'Support taking medication, monitoring a condition and with therapy',
                     summary: 'Questions about help you need to take medication, monitor a health condition or do treatments at home',
                     status: 'not-started',
-                    link: 'getting-in-and-out-of-bed',
+                    link: '/14-taking-medication',
                 },
             ],
             ordered: true,
