@@ -10,6 +10,7 @@ import Button from '@/components/Button';
 import ButtonGroup from '@/components/ButtonGroup';
 import Radios from '@/components/Radio';
 import SectionHeader from '@/components/SectionHeader';
+import Details from '@/components/Details';
 
 /**
  * The document structure
@@ -32,7 +33,19 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
             </Wrapper>
             <Wrapper>
                 <p>If you know the name of your condition or conditions you can enter them below.</p>
-                <p>Examples of conditions you might want to add - needs to be an expandable component</p>
+                <Details label="Examples of conditions you might want to add">
+                    <ul>
+                        <li>arthritis</li>
+                        <li>dementia</li>
+                        <li>heart disease</li>
+                        <li>respiratory disorders and diseases</li>
+                        <li>anxiety</li>
+                        <li>depression</li>
+                        <li>stroke</li>
+                        <li>cancer</li>
+                        <li>something else</li>
+                    </ul>
+                </Details>
                 <p>If you do not know the name of your condition or are waiting for a diagnosis, you can tell us about:</p>
                 <ul>
                     <li>your symptoms</li>
