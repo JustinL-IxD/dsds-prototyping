@@ -46,8 +46,8 @@ const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAn
                         <li>needing to move during the night</li>
                     </ul>
                     <Radios
-                        name="dressing"
-                        id="dressing"
+                        name="sleeping"
+                        id="sleeping"
                         items={[
                             {
                                 label: 'Yes',

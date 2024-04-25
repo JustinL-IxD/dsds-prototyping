@@ -35,8 +35,8 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
             <Wrapper>
                 <form>
                     <Radios
-                        name="go-next"
-                        id="go-next"
+                        name="accomodation"
+                        id="accomodation"
                         label="At the moment, are you staying in any of the following:"
                         items={[
                             {

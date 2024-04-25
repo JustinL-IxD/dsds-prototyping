@@ -43,8 +43,8 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
             <Wrapper>
                 <form>
                     <Radios
-                        name="go-next"
-                        id="go-next"
+                        name="add-medication"
+                        id="add-medication"
                         label="Does your medication cause any side effects?"
                         hintText="opens when items have been inputted but need to sort logic"
                         items={[

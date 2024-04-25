@@ -43,8 +43,8 @@ const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAn
             <Wrapper style={{ marginBottom: '40px' }}>
                 <Question id="field-fixed-20" label="Do you need someone to help you do therapy at home?">
                     <Radios
-                        name="dressing"
-                        id="dressing"
+                        name="therapy-home"
+                        id="therapy-home"
                         items={[
                             {
                                 label: 'Yes',
@@ -76,8 +76,8 @@ const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAn
                 <Question id="field-fixed-20" label="How long does someone spend helping you do therapy at home each week?" hintText="Select one">
                     <p>If you get help from more than one person, tell us the total time you get help for.</p>
                     <Radios
-                        name="dressing"
-                        id="dressing"
+                        name="how-long"
+                        id="how-long"
                         items={[
                             {
                                 label: 'Less than 3.5 hours a week',

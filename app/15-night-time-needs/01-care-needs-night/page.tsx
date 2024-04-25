@@ -33,8 +33,8 @@ const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAn
                 <Question id="field-fixed-20" label="Do you need help or support during the night?">
                     <p>If you select yes, we&apos;ll ask you some questions about the different type of help or support you need at night.</p>
                     <Radios
-                        name="dressing"
-                        id="dressing"
+                        name="support-night"
+                        id="support-night"
                         items={[
                             {
                                 label: 'Yes',

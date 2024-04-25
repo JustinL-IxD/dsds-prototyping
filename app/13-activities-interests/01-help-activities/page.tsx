@@ -39,8 +39,8 @@ const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAn
                         <li>doing puzzles</li>
                     </ul>
                     <Radios
-                        name="dressing"
-                        id="dressing"
+                        name="acivities"
+                        id="acivities"
                         items={[
                             {
                                 label: 'Yes',
@@ -68,8 +68,8 @@ const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAn
                         <li>social or religious activities</li>
                     </ul>
                     <Radios
-                        name="dressing"
-                        id="dressing"
+                        name="extra-support"
+                        id="extra-support"
                         items={[
                             {
                                 label: 'Yes',

@@ -44,8 +44,8 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
             <Wrapper>
                 <form>
                     <Radios
-                        name="go-next"
-                        id="go-next"
+                        name="add-therapy"
+                        id="add-therapy"
                         label="Does your treatments and therapies cause any side effects?"
                         hintText="opens when items have been inputted but need to sort logic"
                         items={[

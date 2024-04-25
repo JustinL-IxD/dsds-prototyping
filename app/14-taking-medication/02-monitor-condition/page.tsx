@@ -50,8 +50,8 @@ const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAn
             <Wrapper style={{ marginBottom: '40px' }}>
                 <Question id="field-fixed-20" label="Do you need someone or something to help you monitor a health condition?">
                     <Radios
-                        name="dressing"
-                        id="dressing"
+                        name="health-condition"
+                        id="health-condition"
                         items={[
                             {
                                 label: 'Yes',

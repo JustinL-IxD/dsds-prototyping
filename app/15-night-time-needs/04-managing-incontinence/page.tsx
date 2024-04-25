@@ -46,8 +46,8 @@ const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAn
                         <li>needing prompted or reminded to go to the toilet</li>
                     </ul>
                     <Radios
-                        name="dressing"
-                        id="dressing"
+                        name="incontinence-night"
+                        id="incontinence-night"
                         items={[
                             {
                                 label: 'Yes',

@@ -43,8 +43,8 @@ const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAn
                         <li>support you during the day every day, even if you do not currently get this help</li>
                     </ul>
                     <Radios
-                        name="dressing"
-                        id="dressing"
+                        name="safe-day"
+                        id="safe-day"
                         items={[
                             {
                                 label: 'Yes',

@@ -41,8 +41,8 @@ const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAn
             </Wrapper>
             <Wrapper>
                 <Checkboxes
-                    name="care-checkboxes"
-                    id="care-checkboxes"
+                    name="indoor-checkboxes"
+                    id="indoor-checkboxes"
                     label="What help or support do you need moving around indoors during the day?"
                     hintText="Select all that apply"
                     items={[

@@ -35,8 +35,8 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
             <Wrapper>
                 <form>
                     <Radios
-                        name="go-next"
-                        id="go-next"
+                        name="add-condition"
+                        id="add-condition"
                         label="Do you know the name of your condition?"
                         hintText="If you do not know the name of your condition, we'll ask about symptoms you have and any test results you're waiting on"
                         items={[
