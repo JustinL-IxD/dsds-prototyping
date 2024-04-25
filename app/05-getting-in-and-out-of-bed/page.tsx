@@ -41,12 +41,12 @@ const GettingInAndOutOfBed:React.FC = function GettingInAndOutOfBed() {
             <Wrapper style={{ marginBottom: '20px' }}>
                 <Image
                     src={bedPic1}
-                    alt="A hospital"
+                    alt="An older man sitting on the edge of a bed"
                     height={300}
                 />
                 <Image
                     src={bedPic2}
-                    alt="A hospital"
+                    alt="A nurse helping an elderly women out of bed"
                     height={300}
                 />
             </Wrapper>

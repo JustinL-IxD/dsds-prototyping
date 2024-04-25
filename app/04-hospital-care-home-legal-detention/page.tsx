@@ -41,12 +41,12 @@ const HospitalCareHomeLegalDetention:React.FC = function HospitalCareHomeLegalDe
             <Wrapper style={{ marginBottom: '20px' }}>
                 <Image
                     src={hospitalPic1}
-                    alt="A hospital"
+                    alt="An image of a bathroom"
                     height={300}
                 />
                 <Image
                     src={hospitalPic2}
-                    alt="A hospital"
+                    alt="A man in bath using tool to wash back"
                     height={300}
                 />
             </Wrapper>

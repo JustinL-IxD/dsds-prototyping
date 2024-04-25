@@ -2,8 +2,9 @@
 
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import hospitalPic1 from '@/public/images/hospital-care-01.jpg';
-import hospitalPic2 from '@/public/images/hospital-care-02.jpg';
+
+import Pic1 from '@/public/images/care-needs-01.png';
+import Pic2 from '@/public/images/care-needs-02.png';
 
 import PageHeader from '@/components/PageHeader';
 import Wrapper from '@/components/Wrapper';
@@ -40,13 +41,13 @@ const HospitalCareHomeLegalDetention:React.FC = function HospitalCareHomeLegalDe
             </Wrapper>
             <Wrapper style={{ marginBottom: '20px' }}>
                 <Image
-                    src={hospitalPic1}
-                    alt="A hospital"
+                    src={Pic1}
+                    alt="A man holding his knee"
                     height={300}
                 />
                 <Image
-                    src={hospitalPic2}
-                    alt="A hospital"
+                    src={Pic2}
+                    alt="A nurse helping an older man to walk"
                     height={300}
                 />
             </Wrapper>

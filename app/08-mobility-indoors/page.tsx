@@ -2,8 +2,8 @@
 
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import bedPic1 from '@/public/images/bed-01.png';
-import bedPic2 from '@/public/images/bed-02.png';
+import Pic1 from '@/public/images/mobility-01.jpg';
+import Pic2 from '@/public/images/mobility-02.jpg';
 
 import PageHeader from '@/components/PageHeader';
 import Wrapper from '@/components/Wrapper';
@@ -40,13 +40,13 @@ const GettingInAndOutOfBed:React.FC = function GettingInAndOutOfBed() {
             </Wrapper>
             <Wrapper style={{ marginBottom: '20px' }}>
                 <Image
-                    src={bedPic1}
-                    alt="A hospital"
+                    src={Pic1}
+                    alt="Someone helping a man walk along the street"
                     height={300}
                 />
                 <Image
-                    src={bedPic2}
-                    alt="A hospital"
+                    src={Pic2}
+                    alt="A woman with a walking aid"
                     height={300}
                 />
             </Wrapper>
