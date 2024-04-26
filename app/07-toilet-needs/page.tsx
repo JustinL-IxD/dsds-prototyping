@@ -10,6 +10,7 @@ import Wrapper from '@/components/Wrapper';
 import Button from '@/components/Button';
 import ButtonGroup from '@/components/ButtonGroup';
 import SectionHeader from '@/components/SectionHeader';
+import Grid from '@/components/Grid';
 
 export const metadata:Metadata = {
     title: 'About your toilet needs and managing incontinence',
@@ -39,16 +40,18 @@ const GettingInAndOutOfBed:React.FC = function GettingInAndOutOfBed() {
                 <PageHeader title={pageTitle} caption="Toilet needs and managing incontinence" />
             </Wrapper>
             <Wrapper style={{ marginBottom: '20px' }}>
-                <Image
-                    src={Pic1}
-                    alt="A women using adaptation to sit on toilet"
-                    height={300}
-                />
-                <Image
-                    src={Pic2}
-                    alt="An image of some toilet paper"
-                    height={300}
-                />
+                <Grid columns={2}>
+                    <Image
+                        src={Pic1}
+                        alt="A women using adaptation to sit on toilet"
+                        height={300}
+                    />
+                    <Image
+                        src={Pic2}
+                        alt="An image of some toilet paper"
+                        height={300}
+                    />
+                </Grid>
             </Wrapper>
             <Wrapper>
                 <p>In this section, we&apos;ll ask about:</p>

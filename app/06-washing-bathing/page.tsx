@@ -2,17 +2,18 @@
 
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import bedPic1 from '@/public/images/bed-01.png';
-import bedPic2 from '@/public/images/bed-02.png';
+import Pic1 from '@/public/images/hospital-care-01.jpg';
+import Pic2 from '@/public/images/hospital-care-02.jpg';
 
 import PageHeader from '@/components/PageHeader';
 import Wrapper from '@/components/Wrapper';
 import Button from '@/components/Button';
 import ButtonGroup from '@/components/ButtonGroup';
 import SectionHeader from '@/components/SectionHeader';
+import Grid from '@/components/Grid';
 
 export const metadata:Metadata = {
-    title: 'About getting in and out of bed',
+    title: 'About washing and bathing',
 };
 
 /**
@@ -39,16 +40,18 @@ const GettingInAndOutOfBed:React.FC = function GettingInAndOutOfBed() {
                 <PageHeader title={pageTitle} caption="Washing and bathing" />
             </Wrapper>
             <Wrapper style={{ marginBottom: '20px' }}>
-                <Image
-                    src={bedPic1}
-                    alt="An image of a bathroom"
-                    height={300}
-                />
-                <Image
-                    src={bedPic2}
-                    alt="A man in bath using tool to wash back"
-                    height={300}
-                />
+                <Grid columns={2}>
+                    <Image
+                        src={Pic1}
+                        alt="An image of a bathroom"
+                        height={300}
+                    />
+                    <Image
+                        src={Pic2}
+                        alt="A man in bath using tool to wash back"
+                        height={300}
+                    />
+                </Grid>
             </Wrapper>
             <Wrapper>
                 <p>In this section, we&apos;ll ask about:</p>

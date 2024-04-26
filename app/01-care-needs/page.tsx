@@ -11,6 +11,7 @@ import Wrapper from '@/components/Wrapper';
 import Button from '@/components/Button';
 import ButtonGroup from '@/components/ButtonGroup';
 import SectionHeader from '@/components/SectionHeader';
+import Grid from '@/components/Grid';
 
 export const metadata:Metadata = {
     title: 'About your care needs',
@@ -40,16 +41,18 @@ const HospitalCareHomeLegalDetention:React.FC = function HospitalCareHomeLegalDe
                 <PageHeader title={pageTitle} caption="When your care needs started" />
             </Wrapper>
             <Wrapper style={{ marginBottom: '20px' }}>
-                <Image
-                    src={Pic1}
-                    alt="A man holding his knee"
-                    height={300}
-                />
-                <Image
-                    src={Pic2}
-                    alt="A nurse helping an older man to walk"
-                    height={300}
-                />
+                <Grid columns={2}>
+                    <Image
+                        src={Pic1}
+                        alt="A man holding his knee"
+                        height={300}
+                    />
+                    <Image
+                        src={Pic2}
+                        alt="A nurse helping an older man to walk"
+                        height={300}
+                    />
+                </Grid>
             </Wrapper>
             <Wrapper>
                 <p>In this section, we&apos;ll ask about your care needs.</p>

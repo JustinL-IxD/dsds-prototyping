@@ -10,6 +10,7 @@ import Wrapper from '@/components/Wrapper';
 import Button from '@/components/Button';
 import ButtonGroup from '@/components/ButtonGroup';
 import SectionHeader from '@/components/SectionHeader';
+import Grid from '@/components/Grid';
 
 export const metadata:Metadata = {
     title: 'About help you need with medication, therapies and monitoring a condition',
@@ -39,16 +40,18 @@ const GettingInAndOutOfBed:React.FC = function GettingInAndOutOfBed() {
                 <PageHeader title={pageTitle} caption="Support taking medication, monitoring a condition and with therapy" />
             </Wrapper>
             <Wrapper style={{ marginBottom: '20px' }}>
-                <Image
-                    src={Pic1}
-                    alt="Man taking medication at kitchen table"
-                    height={300}
-                />
-                <Image
-                    src={Pic2}
-                    alt="Man taking blood pressure of older woman"
-                    height={300}
-                />
+                <Grid columns={2}>
+                    <Image
+                        src={Pic1}
+                        alt="Man taking medication at kitchen table"
+                        height={300}
+                    />
+                    <Image
+                        src={Pic2}
+                        alt="Man taking blood pressure of older woman"
+                        height={300}
+                    />
+                </Grid>
             </Wrapper>
             <Wrapper>
                 <p>In this section, we&apos;ll ask about help you need to:</p>

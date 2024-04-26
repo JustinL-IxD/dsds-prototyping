@@ -10,6 +10,7 @@ import Wrapper from '@/components/Wrapper';
 import Button from '@/components/Button';
 import ButtonGroup from '@/components/ButtonGroup';
 import SectionHeader from '@/components/SectionHeader';
+import Grid from '@/components/Grid';
 
 export const metadata:Metadata = {
     title: 'About communicating with others',
@@ -39,16 +40,18 @@ const GettingInAndOutOfBed:React.FC = function GettingInAndOutOfBed() {
                 <PageHeader title={pageTitle} caption="Communicating with others" />
             </Wrapper>
             <Wrapper style={{ marginBottom: '20px' }}>
-                <Image
-                    src={Pic1}
-                    alt="Two people talking in a living room"
-                    height={300}
-                />
-                <Image
-                    src={Pic2}
-                    alt="Two people talking in the street"
-                    height={300}
-                />
+                <Grid columns={2}>
+                    <Image
+                        src={Pic1}
+                        alt="Two people talking in a living room"
+                        height={300}
+                    />
+                    <Image
+                        src={Pic2}
+                        alt="Two people talking in the street"
+                        height={300}
+                    />
+                </Grid>
             </Wrapper>
             <Wrapper>
                 <p>In this section, we&apos;ll ask about:</p>

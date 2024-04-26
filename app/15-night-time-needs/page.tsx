@@ -10,6 +10,7 @@ import Wrapper from '@/components/Wrapper';
 import Button from '@/components/Button';
 import ButtonGroup from '@/components/ButtonGroup';
 import SectionHeader from '@/components/SectionHeader';
+import Grid from '@/components/Grid';
 
 export const metadata:Metadata = {
     title: 'About your care needs during the night',
@@ -39,16 +40,18 @@ const GettingInAndOutOfBed:React.FC = function GettingInAndOutOfBed() {
                 <PageHeader title={pageTitle} caption="Night time care needs" />
             </Wrapper>
             <Wrapper style={{ marginBottom: '20px' }}>
-                <Image
-                    src={Pic1}
-                    alt="A man holding his head sitting on the edge of a bed"
-                    height={300}
-                />
-                <Image
-                    src={Pic2}
-                    alt="Person leaving their bedroom during the night"
-                    height={300}
-                />
+                <Grid columns={2}>
+                    <Image
+                        src={Pic1}
+                        alt="A man holding his head sitting on the edge of a bed"
+                        height={300}
+                    />
+                    <Image
+                        src={Pic2}
+                        alt="Person leaving their bedroom during the night"
+                        height={300}
+                    />
+                </Grid>
             </Wrapper>
             <Wrapper>
                 <p>In this section, we&apos;ll ask about help you need at night.</p>

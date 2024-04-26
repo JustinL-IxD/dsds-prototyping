@@ -2,14 +2,15 @@
 
 import type { Metadata } from 'next';
 import Image from 'next/image';
-import hospitalPic1 from '@/public/images/hospital-care-01.jpg';
-import hospitalPic2 from '@/public/images/hospital-care-02.jpg';
+import Pic1 from '@/public/images/hospital-care-01.jpg';
+import Pic2 from '@/public/images/hospital-care-02.jpg';
 
 import PageHeader from '@/components/PageHeader';
 import Wrapper from '@/components/Wrapper';
 import Button from '@/components/Button';
 import ButtonGroup from '@/components/ButtonGroup';
 import SectionHeader from '@/components/SectionHeader';
+import Grid from '@/components/Grid';
 
 export const metadata:Metadata = {
     title: 'About any current stay in a hospital, care home or legal detention',
@@ -39,16 +40,18 @@ const HospitalCareHomeLegalDetention:React.FC = function HospitalCareHomeLegalDe
                 <PageHeader title={pageTitle} caption="Current stays in a hospital, care home or legal detention" />
             </Wrapper>
             <Wrapper style={{ marginBottom: '20px' }}>
-                <Image
-                    src={hospitalPic1}
-                    alt="An image of a bathroom"
-                    height={300}
-                />
-                <Image
-                    src={hospitalPic2}
-                    alt="A man in bath using tool to wash back"
-                    height={300}
-                />
+                <Grid columns={2}>
+                    <Image
+                        src={Pic1}
+                        alt="An image of a bathroom"
+                        height={300}
+                    />
+                    <Image
+                        src={Pic2}
+                        alt="A man in bath using tool to wash back"
+                        height={300}
+                    />
+                </Grid>
             </Wrapper>
             <Wrapper>
                 <p>In this section, we&apos;ll ask whether you&apos;re currently staying in:</p>
