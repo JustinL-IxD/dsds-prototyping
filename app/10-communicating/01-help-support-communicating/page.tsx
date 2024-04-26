@@ -3,6 +3,15 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
+
+import Help1 from '@/public/images/communication-help-01.jpg';
+import Help2 from '@/public/images/communication-help-02.jpg';
+import Help3 from '@/public/images/communication-help-03.jpg';
+
+import Aid1 from '@/public/images/communication-aid-01.jpg';
+import Aid2 from '@/public/images/communication-aid-02.jpg';
+import Aid3 from '@/public/images/communication-aid-03.jpg';
 
 import PageHeader from '@/components/PageHeader';
 import Wrapper from '@/components/Wrapper';
@@ -12,6 +21,7 @@ import Radios from '@/components/Radio';
 import Question from '@/components/Question';
 import TextArea from '@/components/TextArea';
 import SectionHeader from '@/components/SectionHeader';
+import Grid from '@/components/Grid';
 
 /**
  * The document structure
@@ -58,8 +68,24 @@ const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAn
             </Wrapper>
             <Wrapper>
                 <h2>Help or support from someone else</h2>
-                <p>Example of help from a persion</p>
-                <h3>Add in images in here</h3>
+                <p>Examples of help from someone else</p>
+                <Grid columns={3}>
+                    <Image
+                        src={Help1}
+                        alt="An image of a bathroom"
+                        height={300}
+                    />
+                    <Image
+                        src={Help2}
+                        alt="A man in bath using tool to wash back"
+                        height={300}
+                    />
+                    <Image
+                        src={Help3}
+                        alt="A man in bath using tool to wash back"
+                        height={300}
+                    />
+                </Grid>
                 <Question id="field-fixed-20" label="Tell us about the help or support you need from someone else to communicate with others">
                     <p>This includes help or support you might need but do not already have.</p>
                     <p>For example, if you need someone to help you speak, make phone calls for you, or to read letters and information for you.</p>
@@ -69,7 +95,32 @@ const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAn
             <Wrapper>
                 <h2>Aids, adaptations and tools</h2>
                 <p>Things you might use to help you communicate include:</p>
-                <h3>Add in images in here</h3>
+                <Grid columns={3}>
+                    <figure>
+                        <Image
+                            src={Aid1}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <figcaption>Hearing aid</figcaption>
+                    </figure>
+                    <figure>
+                        <Image
+                            src={Aid2}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <figcaption>Expression cards</figcaption>
+                    </figure>
+                    <figure>
+                        <Image
+                            src={Aid3}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <figcaption>Something else</figcaption>
+                    </figure>
+                </Grid>
                 <Question id="field-fixed-20" label="Tell us about any aids, adaptations or tools you use to communicate with others">
                     <p>For example, if you use a hearing aid, or need to communicate in a particular way.</p>
                     <TextArea name="field-fixed-20" id="field-fixed-20" width="fixed-20" />

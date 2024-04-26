@@ -3,6 +3,14 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
+
+import Aid1 from '@/public/images/support-help-01.jpg';
+import Aid2 from '@/public/images/support-help-02.jpg';
+import Aid3 from '@/public/images/support-help-03.jpg';
+import Aid4 from '@/public/images/support-help-04.jpg';
+import Aid5 from '@/public/images/support-help-05.jpg';
+import Aid6 from '@/public/images/support-help-06.jpg';
 
 import PageHeader from '@/components/PageHeader';
 import Wrapper from '@/components/Wrapper';
@@ -13,6 +21,7 @@ import Question from '@/components/Question';
 import TextArea from '@/components/TextArea';
 import SectionHeader from '@/components/SectionHeader';
 import Details from '@/components/Details';
+import Grid from '@/components/Grid';
 
 /**
  * The document structure
@@ -55,7 +64,56 @@ const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAn
                     <li>help you only sometimes need</li>
                 </ul>
                 <p>Here are some examples of things you might need to use to help you take medication:</p>
-                <h3>Add images here</h3>
+                <Grid columns={3}>
+                    <figure>
+                        <Image
+                            src={Aid1}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <figcaption>Pill box (sometimes called a dosette box)</figcaption>
+                    </figure>
+                    <figure>
+                        <Image
+                            src={Aid2}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <figcaption>Pill crusher or splitter</figcaption>
+                    </figure>
+                    <figure>
+                        <Image
+                            src={Aid3}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <figcaption>Asthma inhaler spacer</figcaption>
+                    </figure>
+                    <figure>
+                        <Image
+                            src={Aid4}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <figcaption>Someone to remind you to take medication</figcaption>
+                    </figure>
+                    <figure>
+                        <Image
+                            src={Aid5}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <figcaption>Someone to physically help you to take medication</figcaption>
+                    </figure>
+                    <figure>
+                        <Image
+                            src={Aid6}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <figcaption>Something else</figcaption>
+                    </figure>
+                </Grid>
             </Wrapper>
             <Wrapper style={{ marginBottom: '40px' }}>
                 <Question id="field-fixed-20" label="Do you need help to take prescribed medication?">

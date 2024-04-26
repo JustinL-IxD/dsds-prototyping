@@ -3,6 +3,14 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
+
+import Help1 from '@/public/images/moving-help-01.jpg';
+import Help2 from '@/public/images/moving-help-02.jpg';
+import Help3 from '@/public/images/moving-help-03.jpg';
+import Help4 from '@/public/images/moving-help-04.jpg';
+import Help5 from '@/public/images/moving-help-05.jpg';
+import Help6 from '@/public/images/moving-help-06.jpg';
 
 import PageHeader from '@/components/PageHeader';
 import Wrapper from '@/components/Wrapper';
@@ -12,6 +20,7 @@ import Question from '@/components/Question';
 import TextArea from '@/components/TextArea';
 import SectionHeader from '@/components/SectionHeader';
 import Checkboxes from '@/components/Checkbox';
+import Grid from '@/components/Grid';
 
 /**
  * The document structure
@@ -37,7 +46,56 @@ const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAn
                     <li>help you only need sometimes</li>
                 </ul>
                 <p>Examples of help you might need include:</p>
-                <h2>Add images</h2>
+                <Grid columns={3}>
+                    <figure>
+                        <Image
+                            src={Help1}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <figcaption>Walking stick</figcaption>
+                    </figure>
+                    <figure>
+                        <Image
+                            src={Help2}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <figcaption>Walking frame, such as a zimmer frame</figcaption>
+                    </figure>
+                    <figure>
+                        <Image
+                            src={Help3}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <figcaption>Crutches</figcaption>
+                    </figure>
+                    <figure>
+                        <Image
+                            src={Help4}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <figcaption>Holding on to someone&apos;s arm</figcaption>
+                    </figure>
+                    <figure>
+                        <Image
+                            src={Help5}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <figcaption>Holding on to a grab rail or furniture </figcaption>
+                    </figure>
+                    <figure>
+                        <Image
+                            src={Help6}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <figcaption>Something else</figcaption>
+                    </figure>
+                </Grid>
             </Wrapper>
             <Wrapper>
                 <Checkboxes

@@ -3,6 +3,17 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
+
+import Help1 from '@/public/images/eating-help-01.jpg';
+import Help2 from '@/public/images/eating-help-02.jpg';
+
+import Aid1 from '@/public/images/eating-aid-01.jpg';
+import Aid2 from '@/public/images/eating-aid-02.jpg';
+import Aid3 from '@/public/images/eating-aid-03.png';
+import Aid4 from '@/public/images/eating-aid-04.png';
+import Aid5 from '@/public/images/eating-aid-05.png';
+import Aid6 from '@/public/images/eating-aid-05.jpg';
 
 import PageHeader from '@/components/PageHeader';
 import Wrapper from '@/components/Wrapper';
@@ -12,6 +23,7 @@ import Radios from '@/components/Radio';
 import Question from '@/components/Question';
 import TextArea from '@/components/TextArea';
 import SectionHeader from '@/components/SectionHeader';
+import Grid from '@/components/Grid';
 
 /**
  * The document structure
@@ -59,7 +71,18 @@ const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAn
             <Wrapper>
                 <h2>Help or support from someone else</h2>
                 <p>Example of help from someone else</p>
-                <h3>Add in images in here</h3>
+                <Grid columns={3}>
+                    <Image
+                        src={Help1}
+                        alt="An image of a bathroom"
+                        height={300}
+                    />
+                    <Image
+                        src={Help2}
+                        alt="A man in bath using tool to wash back"
+                        height={300}
+                    />
+                </Grid>
                 <Question id="field-fixed-20" label="Tell us about the help or support you need from someone else to eating and drinking">
                     <p>This includes help or support you might need but do not already have.</p>
                     <p>For example, if you need someone to:</p>
@@ -74,7 +97,56 @@ const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAn
             <Wrapper>
                 <h2>Aids, adaptations and tools</h2>
                 <p>Examples of help you might need include:</p>
-                <h3>Add in images in here</h3>
+                <Grid columns={3}>
+                    <figure>
+                        <Image
+                            src={Aid1}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <figcaption>Weighted plates</figcaption>
+                    </figure>
+                    <figure>
+                        <Image
+                            src={Aid2}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <figcaption>No-spill cups</figcaption>
+                    </figure>
+                    <figure>
+                        <Image
+                            src={Aid3}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <figcaption>Plate guards</figcaption>
+                    </figure>
+                    <figure>
+                        <Image
+                            src={Aid4}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <figcaption>Knives, forks and spoons with large handles</figcaption>
+                    </figure>
+                    <figure>
+                        <Image
+                            src={Aid5}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <figcaption>Feeding tube</figcaption>
+                    </figure>
+                    <figure>
+                        <Image
+                            src={Aid6}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <figcaption>Something else</figcaption>
+                    </figure>
+                </Grid>
                 <Question id="field-fixed-20" label="Tell us about any aids, adaptations or tools you use eating and drinking">
                     <p>For example, if you need to use a feeding tube, or if you need to use plate guards to make sure you don&apos;t spill food.</p>
                     <TextArea name="field-fixed-20" id="field-fixed-20" width="fixed-20" />

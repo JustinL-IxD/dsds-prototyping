@@ -3,6 +3,15 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
+
+import Help1 from '@/public/images/toilet-help-01.jpg';
+import Help2 from '@/public/images/toilet-help-02.jpg';
+import Help3 from '@/public/images/toilet-help-03.jpg';
+
+import Aid1 from '@/public/images/toilet-aid-01.jpg';
+import Aid2 from '@/public/images/toilet-aid-02.jpg';
+import Aid3 from '@/public/images/toilet-aid-03.jpg';
 
 import PageHeader from '@/components/PageHeader';
 import Wrapper from '@/components/Wrapper';
@@ -12,6 +21,7 @@ import Radios from '@/components/Radio';
 import Question from '@/components/Question';
 import TextArea from '@/components/TextArea';
 import SectionHeader from '@/components/SectionHeader';
+import Grid from '@/components/Grid';
 
 /**
  * The document structure
@@ -71,7 +81,32 @@ const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAn
             <Wrapper>
                 <h2>Help or support from someone else</h2>
                 <p>Example of help from a persion</p>
-                <h3>Add in images in here</h3>
+                <Grid columns={3}>
+                    <figure>
+                        <Image
+                            src={Help1}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <figcaption>Someone to help you get on and off the toilet</figcaption>
+                    </figure>
+                    <figure>
+                        <Image
+                            src={Help2}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <figcaption>Someone to help you clean yourself</figcaption>
+                    </figure>
+                    <figure>
+                        <Image
+                            src={Help3}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <figcaption>Something else</figcaption>
+                    </figure>
+                </Grid>
                 <Question id="field-fixed-20" label="Tell us about the help or support you need from someone else to use the toilet or manage incontinence">
                     <p>We know this may vary, so let us know if this can change. For example, tell us if you always have difficulty cleaning yourself after, or if you sometimes need encouragement from someone else to go to the toilet</p>
                     <TextArea name="field-fixed-20" id="field-fixed-20" width="fixed-20" />
@@ -80,7 +115,32 @@ const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAn
             <Wrapper>
                 <h2>Aids, adaptations and tools</h2>
                 <p>Example of aids and adaptations</p>
-                <h3>Add in images in here</h3>
+                <Grid columns={3}>
+                    <figure>
+                        <Image
+                            src={Aid1}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <figcaption>Incontinence pads</figcaption>
+                    </figure>
+                    <figure>
+                        <Image
+                            src={Aid2}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <figcaption>Raised toilet seat </figcaption>
+                    </figure>
+                    <figure>
+                        <Image
+                            src={Aid3}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <figcaption>Stoma bag or catheter</figcaption>
+                    </figure>
+                </Grid>
                 <Question id="field-fixed-20" label="Tell us about any aids, adaptations or tools you use to use the toilet or manage incontinence">
                     <p>We know this may vary, so let us know if this can change. For example, tell us if you always need to use a stoma bag or catheter, or if you need someone to help you use the toilet when your condition flares up</p>
                     <TextArea name="field-fixed-20" id="field-fixed-20" width="fixed-20" />
