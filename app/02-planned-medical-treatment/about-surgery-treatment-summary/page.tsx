@@ -5,6 +5,7 @@ import Wrapper from '@/components/Wrapper';
 import Button from '@/components/Button';
 import ButtonGroup from '@/components/ButtonGroup';
 import SectionHeader from '@/components/SectionHeader';
+import SummaryCard from '@/components/SummaryCard';
 
 /**
  * The document structure
@@ -12,6 +13,42 @@ import SectionHeader from '@/components/SectionHeader';
  * @returns {JSX.Element} - The page
  */
 const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHomeLegalDetention() {
+    const listItems = [
+        {
+            label: 'What surgery are you going to have?',
+            answer: 'Surgery text',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'When is it planned for?',
+            answer: '20th July 2023',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+    ];
+    const listItems2 = [
+        {
+            label: 'What surgery are you going to have?',
+            answer: 'Surgery text',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'When is it planned for?',
+            answer: '22nd August 2023',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+    ];
     return (
         <>
             <Wrapper>
@@ -33,12 +70,42 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
                 <p>You should include any regular treatments you receive, as well as follow-up care you have planned</p>
             </Wrapper>
             <Wrapper>
+                <SummaryCard
+                    title="Surgery 01"
+                    items={listItems}
+                    actions={[
+                        {
+                            label: 'Delete',
+                            action: '#',
+                        },
+                        {
+                            label: 'Change',
+                            action: '#',
+                        },
+                    ]}
+                />
+                <SummaryCard
+                    title="Surgery 02"
+                    items={listItems2}
+                    actions={[
+                        {
+                            label: 'Delete',
+                            action: '#',
+                        },
+                        {
+                            label: 'Change',
+                            action: '#',
+                        },
+                    ]}
+                />
+            </Wrapper>
+            <Wrapper>
                 <ButtonGroup>
                     <Button
                         variants="secondary"
                         icon="chevron_right"
                         iconSide="right"
-                        href="/02-planned-medical-treatment/about-planned-surgery-treatment"
+                        href="#"
                     >
                         Add surgery or treatment
                     </Button>
@@ -50,13 +117,13 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
                         variants="secondary"
                         icon="chevron_left"
                         iconSide="left"
-                        href="/02-planned-medical-treatment/planned-medical-treatment"
+                        href="/02-planned-medical-treatment/about-planned-surgery-treatment"
                     >
                         Back
                     </Button>
                     <Button
                         icon="chevron_right"
-                        href="#"
+                        href="/02-planned-medical-treatment/check-your-answers"
                     >
                         Save and continue
                     </Button>

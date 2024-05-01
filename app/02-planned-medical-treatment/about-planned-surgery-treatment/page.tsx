@@ -38,7 +38,6 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
                     <Input name="field-default" id="field-default" />
                 </Question>
             </Wrapper>
-
             <Wrapper>
                 <ButtonGroup>
                     <Button
@@ -51,9 +50,9 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
                     </Button>
                     <Button
                         icon="chevron_right"
-                        href="./check-your-answers"
+                        href="./about-surgery-treatment-summary"
                     >
-                        Save and continue
+                        Add
                     </Button>
                 </ButtonGroup>
             </Wrapper>
