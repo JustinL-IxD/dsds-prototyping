@@ -25,7 +25,7 @@ const Page:React.FC = function Page() {
 
     const listItems = [
         {
-            label: 'Do you have difficulty getting in or out of bed?',
+            label: 'Do you need help or support during the night?',
             answer: 'Yes',
             actions: [{
                 label: 'Change',
@@ -33,7 +33,7 @@ const Page:React.FC = function Page() {
             }],
         },
         {
-            label: 'Do you ever use any aids, tools or adaptions to get in or out of bed?',
+            label: 'Do you need help sleeping comfortably or getting settled in bed?',
             answer: 'Yes',
             actions: [{
                 label: 'Change',
@@ -41,7 +41,119 @@ const Page:React.FC = function Page() {
             }],
         },
         {
-            label: 'Tell us any difficulty you have getting in and out of bed.',
+            label: 'On average, how many nights a week do you need help getting settled or sleeping comfortably?',
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'Tell us about the help you need sleeping comfortably or getting settled',
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'Do you need help getting to or using the toilet at night?',
+            answer: 'Yes',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'On average, how many nights a week do you need help getting to or using the toilet?',
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'Tell us about the help you need getting to or using the toilet at night',
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'Do you need help managing incontinence at night?',
+            answer: 'Yes',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'On average, how many nights a week do you need help managing incontinence?',
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'Tell us about the help you need managing incontinence at night',
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'Do you need help with medication, treatment or therapies at night?',
+            answer: 'Yes',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'On average, how many nights a week do you need help with medication, treatments and therapies?',
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'Tell us about the help you need with medication, treatments and therapies at night',
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'Do you need help staying safe during the night?',
+            answer: 'Yes',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'On average, how many nights a week do you need help staying safe during the night?',
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'Tell us about the help you need from someone to stay safe during the night',
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'Tell us anything else you\'d like us to know about help or support you need during the night',
             answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
             actions: [{
                 label: 'Change',

@@ -25,7 +25,7 @@ const Page:React.FC = function Page() {
 
     const listItems = [
         {
-            label: 'Do you have difficulty getting in or out of bed?',
+            label: 'Since your care needs started, do you need extra help or support from someone with activities and interests at home?',
             answer: 'Yes',
             actions: [{
                 label: 'Change',
@@ -33,7 +33,7 @@ const Page:React.FC = function Page() {
             }],
         },
         {
-            label: 'Do you ever use any aids, tools or adaptions to get in or out of bed?',
+            label: 'Since your care needs started, do you need extra help or support from someone with activities and interests outside?',
             answer: 'Yes',
             actions: [{
                 label: 'Change',
@@ -41,7 +41,7 @@ const Page:React.FC = function Page() {
             }],
         },
         {
-            label: 'Tell us any difficulty you have getting in and out of bed.',
+            label: 'Tell us how your activities and interests have changed since your care needs started',
             answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
             actions: [{
                 label: 'Change',

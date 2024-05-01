@@ -25,7 +25,7 @@ const Page:React.FC = function Page() {
 
     const listItems = [
         {
-            label: 'Do you have difficulty getting in or out of bed?',
+            label: 'Do you need help or support with washing, showering or bathing?',
             answer: 'Yes',
             actions: [{
                 label: 'Change',
@@ -33,15 +33,15 @@ const Page:React.FC = function Page() {
             }],
         },
         {
-            label: 'Do you ever use any aids, tools or adaptions to get in or out of bed?',
-            answer: 'Yes',
+            label: 'Tell us about the help or support you need from someone else to wash, shower or bathe yourself',
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
             actions: [{
                 label: 'Change',
                 action: '#',
             }],
         },
         {
-            label: 'Tell us any difficulty you have getting in and out of bed.',
+            label: 'Tell us about any aids, adaptations or tools you use to wash, shower or bathe',
             answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
             actions: [{
                 label: 'Change',

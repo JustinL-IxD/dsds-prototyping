@@ -25,16 +25,24 @@ const Page:React.FC = function Page() {
 
     const listItems = [
         {
-            label: 'At the moment, are you staying in any of the following:',
-            answer: 'care home',
+            label: 'Are you on a waiting list for surgery or medical treatment?',
+            answer: 'Yes',
             actions: [{
                 label: 'Change',
                 action: '#',
             }],
         },
         {
-            label: 'How your stay in a hospital or care home is paid for',
-            answer: 'My own money or savings',
+            label: 'What surgery you’re going to have',
+            answer: 'Hip Replacement',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'Are you on a waiting list for surgery or medical treatment?',
+            answer: 'June 2023',
             actions: [{
                 label: 'Change',
                 action: '#',
@@ -47,7 +55,7 @@ const Page:React.FC = function Page() {
             <Wrapper>
                 <SectionHeader
                     link="/"
-                    title="Adult disability payment"
+                    title="Pension Age Disability Payment"
                 />
             </Wrapper>
             <Wrapper>

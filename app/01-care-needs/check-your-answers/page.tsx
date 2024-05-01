@@ -25,16 +25,16 @@ const Page:React.FC = function Page() {
 
     const listItems = [
         {
-            label: 'At the moment, are you staying in any of the following:',
-            answer: 'care home',
+            label: 'Have you had care needs for 6 months or more?',
+            answer: 'No',
             actions: [{
                 label: 'Change',
                 action: '#',
             }],
         },
         {
-            label: 'How your stay in a hospital or care home is paid for',
-            answer: 'My own money or savings',
+            label: 'Tell us roughly when your care needs started',
+            answer: '22nd November 2023',
             actions: [{
                 label: 'Change',
                 action: '#',
@@ -47,7 +47,7 @@ const Page:React.FC = function Page() {
             <Wrapper>
                 <SectionHeader
                     link="/"
-                    title="Adult disability payment"
+                    title="Pension Age Disability Payment"
                 />
             </Wrapper>
             <Wrapper>

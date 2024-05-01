@@ -25,16 +25,120 @@ const Page:React.FC = function Page() {
 
     const listItems = [
         {
-            label: 'At the moment, are you staying in any of the following:',
-            answer: 'care home',
+            label: 'Name of condition',
+            answer: 'Arthritis',
             actions: [{
                 label: 'Change',
                 action: '#',
             }],
         },
         {
-            label: 'How your stay in a hospital or care home is paid for',
-            answer: 'My own money or savings',
+            label: 'How long have you had this condition for?',
+            answer: 'About a year',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'Tell us about your conditions and symtoms',
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm. ',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'Do you take medication',
+            answer: 'Yes',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'Name of medication',
+            answer: 'Ritalin',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'Dosage',
+            answer: '10mg',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'How often do you take it',
+            answer: 'Daily',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'Does your medication cause any side effects',
+            answer: 'Yes',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'Tell us any side effects caused by your medication',
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'Do you take any treatments or therapies',
+            answer: 'Yes',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'Treatment name',
+            answer: 'Counselling',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'Frequency',
+            answer: 'Weekly',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'Duration',
+            answer: 'Weekly',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'Does your treatrment cause any side effects',
+            answer: 'Yes',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'Tell us any side effects caused by your treatment',
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
             actions: [{
                 label: 'Change',
                 action: '#',

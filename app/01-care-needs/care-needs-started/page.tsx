@@ -29,13 +29,13 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
                 <p>If your application is successful we&apos;ll use this to calculate when your payments will start</p>
                 <p>need info component added</p>
                 <p>We can only pay you Pension Age Disability Payment after you have had care needs for 6 months or more.</p>
-                <p>You&apos;ll have an opportunity to tell us more about your needs, conditions and circumstances later in the application. </p>
                 <Question
                     id="dob-multi"
                     label="Tell us roughly when your care needs started"
                     tag="fieldset"
-                    hintText="Enter like this: 31 03 1980"
                 >
+                    <p>You&apos;ll have an opportunity to tell us more about your needs, conditions and circumstances later in the application. </p>
+                    <p>Enter like this: 31 03 1980</p>
                     <DateInput
                         name="dob-multi"
                         id="dob-multi"

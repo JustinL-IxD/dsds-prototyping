@@ -34,7 +34,7 @@ const Page:React.FC = function Page() {
         },
         {
             label: 'How your stay in a hospital or care home is paid for',
-            answer: 'My own money or savings',
+            answer: 'Private healthcare',
             actions: [{
                 label: 'Change',
                 action: '#',

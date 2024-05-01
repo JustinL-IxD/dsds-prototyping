@@ -25,7 +25,23 @@ const Page:React.FC = function Page() {
 
     const listItems = [
         {
-            label: 'Do you have difficulty getting in or out of bed?',
+            label: 'What help or support do you need moving around indoors during the day?',
+            answer: 'Going up or down stairs',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'Tell us about what you need help or support with and any aids, tools or adaptions you use',
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'Do you ever fall or stumble when moving around indoors?',
             answer: 'Yes',
             actions: [{
                 label: 'Change',
@@ -33,7 +49,7 @@ const Page:React.FC = function Page() {
             }],
         },
         {
-            label: 'Do you ever use any aids, tools or adaptions to get in or out of bed?',
+            label: 'Do you need help or support from someone or something to avoid falls or stumbles?',
             answer: 'Yes',
             actions: [{
                 label: 'Change',
@@ -41,8 +57,8 @@ const Page:React.FC = function Page() {
             }],
         },
         {
-            label: 'Tell us any difficulty you have getting in and out of bed.',
-            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+            label: 'Tell us about the help or support you need from someone else to wash, shower or bathe yourself',
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
             actions: [{
                 label: 'Change',
                 action: '#',
