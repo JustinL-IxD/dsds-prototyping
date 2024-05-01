@@ -7,6 +7,7 @@ import ButtonGroup from '@/components/ButtonGroup';
 import SectionHeader from '@/components/SectionHeader';
 import Question from '@/components/Question';
 import DateInput from '@/components/Date';
+import Warning from '@/components/Warning';
 
 /**
  * The document structure
@@ -26,8 +27,9 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
                 <PageHeader title="We want to know when your care needs started" caption="When your care needs started" />
             </Wrapper>
             <Wrapper>
-                <p>If your application is successful we&apos;ll use this to calculate when your payments will start</p>
-                <p>need info component added</p>
+                <Warning>If your application is successful we&apos;ll use this to calculate when your payments will start</Warning>
+            </Wrapper>
+            <Wrapper>
                 <p>We can only pay you Pension Age Disability Payment after you have had care needs for 6 months or more.</p>
                 <Question
                     id="dob-multi"
