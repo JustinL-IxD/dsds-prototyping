@@ -33,6 +33,14 @@ const Page:React.FC = function Page() {
             }],
         },
         {
+            label: 'Tell us about your stay',
+            answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
             label: 'How your stay in a hospital or care home is paid for',
             answer: 'Private healthcare',
             actions: [{

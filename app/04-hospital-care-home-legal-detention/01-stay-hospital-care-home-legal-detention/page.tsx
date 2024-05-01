@@ -85,7 +85,7 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
             </Wrapper>
             {open && (
                 <Wrapper>
-                    <Question id="field-fixed-20" label="Tell us about your stay.">
+                    <Question id="field-fixed-20" label="Tell us about your stay">
                         <p>You should include:</p>
                         <ul>
                             <li>when your stay started</li>

@@ -71,18 +71,20 @@ const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAn
             <Wrapper>
                 <h2>Help or support from someone else</h2>
                 <p>Example of help from someone else</p>
-                <Grid columns={3}>
-                    <Image
-                        src={Help1}
-                        alt="An image of a bathroom"
-                        height={300}
-                    />
-                    <Image
-                        src={Help2}
-                        alt="A man in bath using tool to wash back"
-                        height={300}
-                    />
-                </Grid>
+                <div style={{ marginBottom: '40px' }}>
+                    <Grid columns={3}>
+                        <Image
+                            src={Help1}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <Image
+                            src={Help2}
+                            alt="A man in bath using tool to wash back"
+                            height={300}
+                        />
+                    </Grid>
+                </div>
                 <Question id="field-fixed-20" label="Tell us about the help or support you need from someone else to eating and drinking">
                     <p>This includes help or support you might need but do not already have.</p>
                     <p>For example, if you need someone to:</p>

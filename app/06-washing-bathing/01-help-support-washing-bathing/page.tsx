@@ -81,23 +81,25 @@ const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAn
             <Wrapper>
                 <h2>Help or support from someone else</h2>
                 <p>Example of help from a persion</p>
-                <Grid columns={3}>
-                    <Image
-                        src={Help1}
-                        alt="An image of a bathroom"
-                        height={300}
-                    />
-                    <Image
-                        src={Help2}
-                        alt="A man in bath using tool to wash back"
-                        height={300}
-                    />
-                    <Image
-                        src={Help3}
-                        alt="A man in bath using tool to wash back"
-                        height={300}
-                    />
-                </Grid>
+                <div style={{ marginBottom: '30px' }}>
+                    <Grid columns={3}>
+                        <Image
+                            src={Help1}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <Image
+                            src={Help2}
+                            alt="A man in bath using tool to wash back"
+                            height={300}
+                        />
+                        <Image
+                            src={Help3}
+                            alt="A man in bath using tool to wash back"
+                            height={300}
+                        />
+                    </Grid>
+                </div>
                 <Question id="field-fixed-20" label="Tell us about the help or support you need from someone else to wash, shower or bathe yourself">
                     <p>We know this may vary, so let us know if this can change. For example, if you always have difficulty washing yourself without help from someone, or if you need someone to remind you to wash or bathe</p>
                     <TextArea name="field-fixed-20" id="field-fixed-20" width="fixed-20" />
@@ -106,38 +108,40 @@ const HelpYouNeedGettingInAndOutOfBed:React.FC = function HelpYouNeedGettingInAn
             <Wrapper>
                 <h2>Aids, adaptations and tools</h2>
                 <p>Example of aids and adaptations</p>
-                <Grid columns={3}>
-                    <Image
-                        src={Aid1}
-                        alt="An image of a bathroom"
-                        height={300}
-                    />
-                    <Image
-                        src={Aid2}
-                        alt="A man in bath using tool to wash back"
-                        height={300}
-                    />
-                    <Image
-                        src={Aid3}
-                        alt="A man in bath using tool to wash back"
-                        height={300}
-                    />
-                    <Image
-                        src={Aid4}
-                        alt="An image of a bathroom"
-                        height={300}
-                    />
-                    <Image
-                        src={Aid5}
-                        alt="A man in bath using tool to wash back"
-                        height={300}
-                    />
-                    <Image
-                        src={Aid6}
-                        alt="A man in bath using tool to wash back"
-                        height={300}
-                    />
-                </Grid>
+                <div style={{ marginBottom: '30px' }}>
+                    <Grid columns={3}>
+                        <Image
+                            src={Aid1}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <Image
+                            src={Aid2}
+                            alt="A man in bath using tool to wash back"
+                            height={300}
+                        />
+                        <Image
+                            src={Aid3}
+                            alt="A man in bath using tool to wash back"
+                            height={300}
+                        />
+                        <Image
+                            src={Aid4}
+                            alt="An image of a bathroom"
+                            height={300}
+                        />
+                        <Image
+                            src={Aid5}
+                            alt="A man in bath using tool to wash back"
+                            height={300}
+                        />
+                        <Image
+                            src={Aid6}
+                            alt="A man in bath using tool to wash back"
+                            height={300}
+                        />
+                    </Grid>
+                </div>
                 <Question id="field-fixed-20" label="Tell us about any aids, adaptations or tools you use to wash, shower or bathe">
                     <p>For example, if you had rails installed to help you get in and out of the bath, or if you need to use a bath seat</p>
                     <TextArea name="field-fixed-20" id="field-fixed-20" width="fixed-20" />
