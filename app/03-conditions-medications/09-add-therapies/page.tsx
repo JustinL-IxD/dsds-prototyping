@@ -52,9 +52,9 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
                     </Button>
                     <Button
                         icon="chevron_right"
-                        href="./10-check-your-answers"
+                        href="./08a-about-therapies-summary"
                     >
-                        Save and continue
+                        Add
                     </Button>
                 </ButtonGroup>
             </Wrapper>

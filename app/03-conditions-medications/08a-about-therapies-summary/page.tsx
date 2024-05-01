@@ -1,13 +1,18 @@
 /* eslint-disable max-len */
 
+'use client';
+
+import React, { useState } from 'react';
+
 import PageHeader from '@/components/PageHeader';
 import Wrapper from '@/components/Wrapper';
 import Button from '@/components/Button';
 import ButtonGroup from '@/components/ButtonGroup';
 import SectionHeader from '@/components/SectionHeader';
-import SummaryCard from '@/components/SummaryCard';
+import Radios from '@/components/Radio';
 import Question from '@/components/Question';
 import TextArea from '@/components/TextArea';
+import SummaryCard from '@/components/SummaryCard';
 
 /**
  * The document structure
@@ -15,18 +20,27 @@ import TextArea from '@/components/TextArea';
  * @returns {JSX.Element} - The page
  */
 const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHomeLegalDetention() {
+    const [open, setOpen] = useState(false);
     const listItems = [
         {
-            label: 'What surgery are you going to have?',
-            answer: 'Surgery text',
+            label: 'Treatment name',
+            answer: 'Name of treatment',
             actions: [{
                 label: 'Change',
                 action: '#',
             }],
         },
         {
-            label: 'When is it planned for?',
-            answer: '20th July 2023',
+            label: 'Frequency',
+            answer: 'Every day',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'Duration',
+            answer: '45 minutes',
             actions: [{
                 label: 'Change',
                 action: '#',
@@ -35,16 +49,24 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
     ];
     const listItems2 = [
         {
-            label: 'What surgery are you going to have?',
-            answer: 'Surgery text',
+            label: 'Treatment name',
+            answer: 'Name of treatment',
             actions: [{
                 label: 'Change',
                 action: '#',
             }],
         },
         {
-            label: 'When is it planned for?',
-            answer: '22nd August 2023',
+            label: 'Frequency',
+            answer: 'Every week',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'Duration',
+            answer: '2 hours',
             actions: [{
                 label: 'Change',
                 action: '#',
@@ -60,20 +82,20 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
                 />
             </Wrapper>
             <Wrapper>
-                <PageHeader title="About your surgery or treatment" caption="Planned medical treatment" />
+                <PageHeader title="About your treatments or therapies" caption="Conditions, medications and treatments" />
             </Wrapper>
             <Wrapper>
-                <p>Tell us about any surgery or treament you have planned.</p>
+                <p>Tell us about any treatment or therapies you take.</p>
                 <p>We&apos;ll ask about:</p>
                 <ul>
-                    <li>what surgery or treatment you&apos;re going to have</li>
-                    <li>when it&apos;s planned for, if you know</li>
+                    <li>the name of the treatment or therapy</li>
+                    <li>how frequently you do it</li>
+                    <li>how long it takes</li>
                 </ul>
-                <p>You should include any regular treatments you receive, as well as follow-up care you have planned</p>
             </Wrapper>
             <Wrapper>
                 <SummaryCard
-                    title="Surgery 01"
+                    title="Treatment 01"
                     items={listItems}
                     actions={[
                         {
@@ -87,7 +109,7 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
                     ]}
                 />
                 <SummaryCard
-                    title="Surgery 02"
+                    title="Treatment 02"
                     items={listItems2}
                     actions={[
                         {
@@ -109,33 +131,62 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
                         iconSide="right"
                         href="#"
                     >
-                        Add surgery or treatment
+                        Add medications
                     </Button>
                 </ButtonGroup>
             </Wrapper>
             <Wrapper>
-                <Question id="field-fixed-20" label="Tell us about the surgery or medical treatment you have planned, related to your care needs">
-                    <p>It&apos;s helpful for us to know about:</p>
-                    <ul>
-                        <li>help or support you&apos;ll need before or after your surgery or medical treatment</li>
-                        <li>how your needs might change before or after your surgery or medical treatment</li>
-                    </ul>
-                    <TextArea name="field-fixed-20" id="field-fixed-20" width="fixed-20" />
-                </Question>
+                <form>
+                    <Radios
+                        name="add-therapy"
+                        id="add-therapy"
+                        label="Does your treatments and therapies cause any side effects?"
+                        items={[
+                            {
+                                label: 'Yes',
+                                value: 'yes',
+                                /**
+                                    * @param {Event} event - The event object
+                                 */
+                                onChange() {
+                                    setOpen(true);
+                                },
+                            },
+                            {
+                                label: 'No',
+                                value: 'no',
+                                /**
+                                    * @param {Event} event - The event object
+                                 */
+                                onChange() {
+                                    setOpen(false);
+                                },
+                            },
+                        ]}
+                    />
+                </form>
             </Wrapper>
+            {open && (
+                <Wrapper>
+                    <Question id="field-fixed-20" label="Tell us any side effects caused by your treatments and therapies">
+                        <p>Include any side effect you get from any of your treatments. Include any details such as when and how often the side effect occurs, as well as how long it lasts and it affects your day to day life.</p>
+                        <TextArea name="field-fixed-20" id="field-fixed-20" width="fixed-20" />
+                    </Question>
+                </Wrapper>
+            )}
             <Wrapper>
                 <ButtonGroup>
                     <Button
                         variants="secondary"
                         icon="chevron_left"
                         iconSide="left"
-                        href="/02-planned-medical-treatment/about-planned-surgery-treatment"
+                        href="./07-therapies"
                     >
                         Back
                     </Button>
                     <Button
                         icon="chevron_right"
-                        href="/02-planned-medical-treatment/check-your-answers"
+                        href="./10-check-your-answers"
                     >
                         Save and continue
                     </Button>

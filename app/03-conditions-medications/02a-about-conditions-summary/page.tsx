@@ -5,6 +5,7 @@ import Wrapper from '@/components/Wrapper';
 import Button from '@/components/Button';
 import ButtonGroup from '@/components/ButtonGroup';
 import SectionHeader from '@/components/SectionHeader';
+import SummaryCard from '@/components/SummaryCard';
 
 /**
  * The document structure
@@ -12,6 +13,42 @@ import SectionHeader from '@/components/SectionHeader';
  * @returns {JSX.Element} - The page
  */
 const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHomeLegalDetention() {
+    const listItems = [
+        {
+            label: 'What is the name of your condition?',
+            answer: 'Arthritis',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'How long have you had the condition?',
+            answer: '3 years',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+    ];
+    const listItems2 = [
+        {
+            label: 'What are your symptoms?',
+            answer: 'Test content',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+        {
+            label: 'When is it planned for?',
+            answer: '22nd August 2023',
+            actions: [{
+                label: 'Change',
+                action: '#',
+            }],
+        },
+    ];
     return (
         <>
             <Wrapper>
@@ -33,12 +70,42 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
                 <p>You can also tell us about symptoms you have, if you do not know the name of your condition.</p>
             </Wrapper>
             <Wrapper>
+                <SummaryCard
+                    title="Condition 01"
+                    items={listItems}
+                    actions={[
+                        {
+                            label: 'Delete',
+                            action: '#',
+                        },
+                        {
+                            label: 'Change',
+                            action: '#',
+                        },
+                    ]}
+                />
+                <SummaryCard
+                    title="Symoptom 01"
+                    items={listItems2}
+                    actions={[
+                        {
+                            label: 'Delete',
+                            action: '#',
+                        },
+                        {
+                            label: 'Change',
+                            action: '#',
+                        },
+                    ]}
+                />
+            </Wrapper>
+            <Wrapper>
                 <ButtonGroup>
                     <Button
                         variants="secondary"
                         icon="chevron_right"
                         iconSide="right"
-                        href="./03-add-condition"
+                        href="#"
                     >
                         Add condition or symptoms
                     </Button>
@@ -56,7 +123,7 @@ const StayHospitalCareHomeLegalDetention:React.FC = function StayHospitalCareHom
                     </Button>
                     <Button
                         icon="chevron_right"
-                        href="#"
+                        href="./04-medications"
                     >
                         Save and continue
                     </Button>
